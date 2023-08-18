@@ -1,0 +1,38 @@
+*:focus{
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*Respetar los padding adicionales*/
+    background-color: rgb(207, 216, 228);
+}
+html{
+    scroll-behavior: smooth;
+}
+header .intro{
+    color: #fff;
+    margin: 20px;
+    min-width: 150px;
+    opacity: 1 !important;
+    display: inline-block;
+    visibility: visible !important;
+    border: 2px solid #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+header {
+    background-image: url(Media/Desert.mp4);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+video {
+	opacity: .80;
+	background-repeat: repeat;
+	background-attachment:scroll;
+	width:100%;
+	height:100%;
+	position:absolute;
+	z-index: -1;
+	top:0;
+	left:0
+}
