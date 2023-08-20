@@ -69,6 +69,7 @@ main {
 }
 
 main .call {
+    margin-top: 40px;
     color: #fff;
     width: 60%;
     border: 10px dotted #394867;
@@ -92,17 +93,19 @@ main .call #call-image {
     float: right;
     width: 300px;
     height: 400px;
-    text-align: left;
 }
 
 main .call h1 {
-    color: #f5f5dc;
-    margin-bottom: 20px;
+    color: #212A3E;
+    margin-bottom: 40px;
 }
 
 main .call p {
-    font-size: medium;
-    margin-bottom: 40px;
+    font-size: 20px;
+    margin-bottom: 60px;
+    text-align: left;
+    color: #33415c;
+
 }
 
 main .call a {
@@ -126,21 +129,9 @@ h2 {
 }
 
 section {
-    background-color: hsl(221, 31%, 19%,0.5);
-    height: 700px;
+    background-color: hsl(221, 31%, 19%, 0.5);
     width: 100%;
-    display: flex;
     margin: 0;
-}
-
-.sec1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: wrap row;
-    justify-content: space-evenly;
-    align-items: center;
-    /* Aling content para organizar todo evenly dentro de un */
 }
 
 .item {
@@ -172,16 +163,19 @@ section {
 }
 
 footer {
-    background-color: #212A3E;
+    background-color: #394867;
     color: #f5f5dc;
     text-align: center;
-    font-size: 30px;
-    padding: 20px;
+    font-size: 20px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
 }
 
 footer p {
-    margin-bottom: 20px;
-
+    margin: 10px;
 }
 
 .redes a {
@@ -211,4 +205,95 @@ footer p {
 
 .up:hover {
     color: #352F44;
+}
+
+
+/* CONTACT ME */
+
+.contactB {
+    background-image: url(../Media/Contact.png);
+    background-position: 0;
+    background-size: cover;
+    box-decoration-break: slice;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5dc;
+    margin: auto;
+    height: 80%;
+}
+
+.text-big {
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+}
+
+.h-primary {
+    color: #f5f5dc;
+    padding-top: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+
+.contact-card i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #f5f5dc;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    border: 0;
+    font-family: inherit
+}
+
+.form-field {
+    margin: 2rem;
+
+}
+
+.form-input {
+    background-color: hsl(60, 56%, 91%, 0.7) !important;
+    width: 40%;
+    padding: 24px 31px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: inherit;
+    line-height: 1.2;
+}
+
+.form-button {
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background: hsl(133, 33%, 39%, 0.8);
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-button:hover {
+    background-color: #f5f5dc;
 }
