@@ -1,0 +1,420 @@
+@import url("https://use.typekit.net/zfl7ylc.css");
+
+/* ------------GENERAL CSS------------- */
+*:focus {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "museo-slab", serif;
+    /*Respetar los padding adicionales*/
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header .bar ul {
+    background-color: #394867;
+    box-shadow: 0px 0px 10px #33415c;
+    margin: 0;
+    padding: 1rem 0;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 30px;
+}
+
+header .bar li {
+    list-style-type: none;
+    margin-right: 2rem;
+    /* display: inline-block; */
+}
+
+header .bar li a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+
+header .bar li:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+
+header .bar a:hover {
+    color: #000;
+    transition: all 200ms ease-in;
+}
+
+header .bar button {
+    background-color: transparent;
+    transition: all 200ms ease-in;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: #f5f5dc;
+    cursor: pointer;
+}
+
+header .bar button:hover {
+    color: #352F44;
+}
+
+/* INDEX */
+
+main {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+main .call {
+    margin-top: 40px;
+    color: #fff;
+    width: 98%;
+    padding: 20px;
+    overflow: scroll;
+}
+
+main #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main .call #call-image {
+    float: right;
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+main .call h1 {
+    color: #212A3E;
+    margin-bottom: 40px;
+}
+
+main .call p {
+    font-size: 25px;
+    margin-bottom: 60px;
+    text-align: left;
+    text-overflow: ellipsis;
+    color: #33415c;
+    margin-right: 20px;
+}
+
+main .call a {
+    background-color: #394867;
+    opacity: 0.9;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+
+main .call a:hover {
+    background-color: #333;
+}
+
+h2 {
+    background-color: #394867;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+section {
+    background-color: hsl(221, 31%, 19%, 0.5);
+    width: 100%;
+    margin: 0;
+}
+
+.sec2-travel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#travel-vid {
+    margin-top: 20px;
+    height: 400PX;
+}
+
+.sec2-travel-video {
+    margin: 60px;
+    height: 600px;
+    width: 20%;
+    align-items: center;
+    text-align: justify;
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+.sec2-travel-video h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.sec2-travel-video p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: left;
+    text-overflow: ellipsis;
+    color: #f5f5dc;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+.sec2-travel-video a{
+    text-decoration: none;
+}
+
+/* Carrousel attempt only with CSS*/
+
+#slider {
+	overflow: hidden;
+    margin-top: 20px;
+}
+/* Positions, moving to the left */
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+} 
+
+#slider figure img {
+	height : 600px;
+	float: left;
+}
+
+/* footer */
+footer {
+    background-color: #394867;
+    color: #f5f5dc;
+    text-align: center;
+    font-size: 20px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+footer p {
+    margin: 10px;
+}
+
+.redes a {
+    font-size: 50px;
+    color: #f5f5dc;
+}
+
+.redes i {
+    letter-spacing: 20px;
+}
+
+.up {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #394867;
+    color: #fff;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 0 0 5px #fff;
+    transition: all 200ms ease-in-out;
+}
+
+.up:hover {
+    color: #352F44;
+}
+
+#sec4 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.sec4-contact a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -------------CONTACT ME------------- */
+
+.contactB {
+    background-image: url(../Media/Contact.png);
+    background-position: 0;
+    background-size: cover;
+    box-decoration-break: slice;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5dc;
+    margin: auto;
+    height: 80%;
+}
+
+.text-big {
+    font-weight: bold;
+    font-size: 41px;
+    text-align: center;
+}
+
+.h-primary {
+    color: #f5f5dc;
+    padding-top: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+
+.contact-card i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #f5f5dc;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    display: block;
+    width: 100%;
+    margin-top: 12px;
+    text-overflow: ellipsis;
+    border: 0;
+    font-family: inherit
+}
+
+.form-field {
+    margin: 2rem;
+
+}
+
+.form-input {
+    background-color: hsl(60, 56%, 91%, 0.7) !important;
+    width: 40%;
+    padding: 24px 31px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: inherit;
+    line-height: 1.2;
+}
+
+.form-button {
+    width: 40%;
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background: hsl(221, 31%, 19%, 0.8);
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #f5f5dc;
+}
+
+.form-button:hover {
+    background-color: #f5f5dc;
+}
+
+/* -------------TRAVEL BLOG------------- */
+
+.travelB {
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* -------------ABOUT ME------------- */
+
+/* -------------GALLERY------------- */
