@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/zfl7ylc.css");
 
+/* ------------GENERAL CSS------------- */
 *:focus {
     outline: none;
     margin: 0;
@@ -61,6 +62,8 @@ header .bar button:hover {
     color: #352F44;
 }
 
+/* INDEX */
+
 main {
     height: calc(100vh - 80px);
     width: 100%;
@@ -71,10 +74,9 @@ main {
 main .call {
     margin-top: 40px;
     color: #fff;
-    width: 60%;
-    border: 10px dotted #394867;
+    width: 98%;
     padding: 20px;
-    float: right;
+    overflow: scroll;
 }
 
 main #background-video {
@@ -93,6 +95,7 @@ main .call #call-image {
     float: right;
     width: 300px;
     height: 400px;
+    margin-left: 20px;
 }
 
 main .call h1 {
@@ -101,18 +104,21 @@ main .call h1 {
 }
 
 main .call p {
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 60px;
     text-align: left;
+    text-overflow: ellipsis;
     color: #33415c;
-
+    margin-right: 20px;
 }
 
 main .call a {
     background-color: #394867;
+    opacity: 0.9;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
+    border-radius: 2rem;
 }
 
 main .call a:hover {
@@ -134,34 +140,75 @@ section {
     margin: 0;
 }
 
-.item {
-    height: 120px;
-    width: 120px;
-    background-color: #394867;
-    border: 2px solid #fff;
-    text-align: center;
+.sec2-travel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#travel-vid {
+    margin-top: 20px;
+    height: 400PX;
+}
+
+.sec2-travel-video {
+    margin: 60px;
+    height: 600px;
+    width: 20%;
+    align-items: center;
+    text-align: justify;
     font-size: 22px;
-    line-height: 120px;
-    text-transform: uppercase;
-    color: #fff;
     border-radius: 20px;
 }
 
-.item2 {
-    line-height: 200px;
-    order: 0;
-    /* flex-grow: 2; */
-    flex-shrink: 2;
-    flex-basis: 120px;
+.sec2-travel-video h1 {
+    color: #fff;
+    margin-bottom: 30px;
 }
 
-.item4 {
-    line-height: 40px;
-    order: 0;
-    flex-grow: 4;
-    flex-basis: 120px;
+.sec2-travel-video p {
+    font-size: 16px;
+    margin-bottom: 60px;
+    text-align: left;
+    text-overflow: ellipsis;
+    color: #f5f5dc;
+    overflow: scroll;
+    margin-bottom: 20px;
+}
+.sec2-travel-video a{
+    text-decoration: none;
 }
 
+/* Carrousel attempt only with CSS*/
+
+#slider {
+	overflow: hidden;
+    margin-top: 20px;
+}
+/* Positions, moving to the left */
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+#slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+} 
+
+#slider figure img {
+	height : 600px;
+	float: left;
+}
+
+/* footer */
 footer {
     background-color: #394867;
     color: #f5f5dc;
@@ -207,8 +254,17 @@ footer p {
     color: #352F44;
 }
 
+#sec4 a{
+    text-decoration: none;
+    color: #fff;
+}
 
-/* CONTACT ME */
+.sec4-contact a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* -------------CONTACT ME------------- */
 
 .contactB {
     background-image: url(../Media/Contact.png);
@@ -288,12 +344,77 @@ footer p {
     margin: 20px;
     padding: 10px;
     font-size: 20px;
-    background: hsl(133, 33%, 39%, 0.8);
+    background: hsl(221, 31%, 19%, 0.8);
     outline: none;
     cursor: pointer;
     border-radius: 10px;
+    color: #f5f5dc;
 }
 
 .form-button:hover {
     background-color: #f5f5dc;
 }
+
+/* -------------TRAVEL BLOG------------- */
+
+.travelB {
+    padding: 20px;
+    background: #f1f1f1;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* -------------ABOUT ME------------- */
+
+/* -------------GALLERY------------- */
