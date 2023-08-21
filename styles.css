@@ -140,6 +140,17 @@ section {
     margin: 0;
 }
 
+#sec1 a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+#sec1-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#347f38;
+}
+
+
 .about-section1 {
     display: flex;
     justify-content: center;
