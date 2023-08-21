@@ -461,11 +461,11 @@ footer p {
     margin: 0;
     margin-top: 50px;
     margin-bottom: 50px;
-    height: -o-calc(100% - 65px);
+    height: -o-calc(100vh - 75px);
     /* opera */
-    height: -webkit-calc(100% - 65px);
+    height: -webkit-calc(100vh - 75px);
     /* google, safari */
-    height: -moz-calc(100% - 65px);
+    height: -moz-calc(100vh - 75px);
     /* firefox */
 }
 
@@ -475,7 +475,7 @@ footer p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     background-size: cover; /* Add this line */
     background-position: center center; /* Add this line */
     background-repeat: no-repeat; /* Add this line */
@@ -491,13 +491,8 @@ footer p {
     font-size: 3em;
 }
 
-.about-section h2 {
-    font-size: 2.5em;
-    margin: 20px;
-}
-
 .about-section h3 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .results{
     display: flex;
@@ -513,7 +508,7 @@ footer p {
     justify-content: space-around;
 }
 
-.section-inner a{
+.about-contact a{
     margin: 40px;
     text-decoration: none;
     color: #212A3E;
@@ -521,14 +516,20 @@ footer p {
 
 .section-inner2{
     align-items: center;
-    margin: 40px;
+    margin-bottom: 40px;
 }
 
-
-
+.about-data{
+    font-size: 30px;
+    color: #347f38;
+    font-weight: 700;
+}
+.about-label{
+    font-size: 20px;
+}
 
 #hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/Contact.png');
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
 }
 
 #about {
