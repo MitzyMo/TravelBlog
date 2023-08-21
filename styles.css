@@ -140,6 +140,19 @@ section {
     margin: 0;
 }
 
+.about-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+    color: #fff;
+}
+
 .sec2-travel {
     display: flex;
     flex-direction: row;
