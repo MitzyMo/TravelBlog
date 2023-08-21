@@ -242,6 +242,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 15px;
+    margin-top: 50px;
 }
 
 footer p {
@@ -425,7 +426,7 @@ footer p {
 
 }
 
-/* Add a card effect for articles */
+/* card effect for articles */
 .card {
     background-color: white;
     padding: 20px;
@@ -455,6 +456,85 @@ footer p {
 }
 
 /* -------------ABOUT ME------------- */
+
+.aboutbody {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: -o-calc(100% - 65px);
+    /* opera */
+    height: -webkit-calc(100% - 65px);
+    /* google, safari */
+    height: -moz-calc(100% - 65px);
+    /* firefox */
+}
+
+.about-section {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin: 20px;
+}
+
+.about-section h3 {
+    font-size: 1.5em;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.section-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.section-inner a{
+    margin: 40px;
+    text-decoration: none;
+    color: #212A3E;
+}
+
+.section-inner2{
+    align-items: center;
+    margin: 40px;
+}
+
+
+
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/Contact.png');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
+}
+
 
 /* -------------GALLERY------------- */
 
