@@ -140,6 +140,30 @@ section {
     margin: 0;
 }
 
+#sec1 a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+#sec1-button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#347f38;
+}
+
+
+.about-section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+    color: #fff;
+}
+
 .sec2-travel {
     display: flex;
     flex-direction: row;
@@ -177,35 +201,58 @@ section {
     overflow: scroll;
     margin-bottom: 20px;
 }
-.sec2-travel-video a{
+
+.sec2-travel-video a {
     text-decoration: none;
 }
 
 /* Carrousel attempt only with CSS*/
 
 #slider {
-	overflow: hidden;
+    overflow: hidden;
     margin-top: 20px;
 }
+
 /* Positions, moving to the left */
 @keyframes slider {
-	0% { left: 0; }
-	30% { left: 0; }
-	33% { left: -100%; }
-	63% { left: -100%; }
-	66% { left: -200%; }
-	95% { left: -200%; }
-	100% { left: 0; }
+    0% {
+        left: 0;
+    }
+
+    30% {
+        left: 0;
+    }
+
+    33% {
+        left: -100%;
+    }
+
+    63% {
+        left: -100%;
+    }
+
+    66% {
+        left: -200%;
+    }
+
+    95% {
+        left: -200%;
+    }
+
+    100% {
+        left: 0;
+    }
 }
+
 #slider figure {
-	width:300%;
-	position: relative;
-	animation: 9s slider infinite;
-} 
+    width: 300%;
+    position: relative;
+    animation: 9s slider infinite;
+}
 
 #slider figure img {
-	height : 600px;
-	float: left;
+    height: 600px;
+    float: left;
 }
 
 /* footer */
@@ -219,6 +266,7 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 15px;
+    margin-top: 50px;
 }
 
 footer p {
@@ -254,12 +302,12 @@ footer p {
     color: #352F44;
 }
 
-#sec4 a{
+#sec4 a {
     text-decoration: none;
     color: #fff;
 }
 
-.sec4-contact a{
+.sec4-contact a {
     text-decoration: none;
     color: #fff;
 }
@@ -357,7 +405,13 @@ footer p {
 
 /* -------------TRAVEL BLOG------------- */
 
-.travelB {
+.travelbody {
+    height: -o-calc(100% - 65px);
+    /* opera */
+    height: -webkit-calc(100% - 65px);
+    /* google, safari */
+    height: -moz-calc(100% - 65px);
+    /* firefox */
     padding: 20px;
     background: #f1f1f1;
 }
@@ -365,29 +419,47 @@ footer p {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
+    margin-left: 40px;
     float: left;
-    width: 75%;
+    width: 70%;
 }
 
 /* Right column */
 .rightcolumn {
     float: left;
-    width: 25%;
+    width: 20%;
     padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
     background-color: #aaa;
-    width: 100%;
+    width: 80%;
     padding: 20px;
 }
 
-/* Add a card effect for articles */
+.fakeimg1 {
+    background-color: transparent;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+
+.fakeimg1 img {
+    height: 100px;
+
+}
+
+/* card effect for articles */
 .card {
     background-color: white;
     padding: 20px;
     margin-top: 20px;
+}
+
+.card h2 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* Clear floats after the columns */
@@ -395,14 +467,6 @@ footer p {
     content: "";
     display: table;
     clear: both;
-}
-
-/* Footer */
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -417,4 +481,128 @@ footer p {
 
 /* -------------ABOUT ME------------- */
 
+.aboutbody {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: -o-calc(100vh - 75px);
+    /* opera */
+    height: -webkit-calc(100vh - 75px);
+    /* google, safari */
+    height: -moz-calc(100vh - 75px);
+    /* firefox */
+}
+
+.about-section {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#hero .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+#hero h1 {
+    font-size: 3em;
+}
+
+.about-section h3 {
+    font-size: 2em;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.section-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.about-contact a{
+    margin: 40px;
+    text-decoration: none;
+    color: #212A3E;
+}
+
+.section-inner2{
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-data{
+    font-size: 30px;
+    color: #347f38;
+    font-weight: 700;
+}
+.about-label{
+    font-size: 20px;
+}
+
+#hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
+}
+
+
 /* -------------GALLERY------------- */
+
+.body {
+    height: -o-calc(100% - 65px);
+    /* opera */
+    height: -webkit-calc(100% - 65px);
+    /* google, safari */
+    height: -moz-calc(100% - 65px);
+    /* firefox */
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 0 2rem 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
