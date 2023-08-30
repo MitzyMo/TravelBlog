@@ -1,5 +1,5 @@
 @import url("https://use.typekit.net/zfl7ylc.css");
-
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 /* ------------GENERAL CSS------------- */
 *:focus {
     outline: none;
@@ -553,11 +553,11 @@ footer p {
 }
 
 #hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../Media/contactH.JPG');
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('./Media/contactH.JPG');
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../Media/contactH.JPG');
 }
 
 
