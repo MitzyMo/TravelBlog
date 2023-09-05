@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/*BS Overide*/
+/*BS Overide specifications -personalization*/
 .navbar {
     background-color: #394867 !important;
 }
@@ -27,7 +27,6 @@ html {
 a.nav-link {
     width: 8rem;
     justify-content: space-evenly;
-
     font-size: ;
     color: #fff;
     font-size: 20px;
