@@ -8,6 +8,7 @@
     box-sizing: border-box;
     /*Respetar los padding adicionales*/
     font-family: "museo-slab", serif;
+    font-weight: lighter;
 }
 
 /* ------------Smooth Scrolling------------- */
@@ -31,6 +32,7 @@ a.nav-link {
     color: #fff;
     font-size: 20px;
     font-weight: lighter;
+    /* transition: all 100ms ease-in-out; */
 }
 
 /* INDEX */
