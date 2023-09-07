@@ -2,14 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
     <title>Mercy Mo</title>
     <!-- Icon for title -->
-    <link rel="shortcut icon" href="Media/Mercy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./Assets/Media/Mercy.png" type="image/x-icon">
+    <!--BS 5.3 Start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="./css/custom.css">
+=======
+    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+>>>>>>> second
     <!-- The hamburger menu for small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Icons -->
@@ -21,29 +28,49 @@
 
 <body>
     <header>
-        <!-- Main Name Logo -->
-        <!--         <div class="logo"> <span><a href="#">Mercy Mo 🛩️</a></span></div> -->
-        <nav class="bar">
-            <!-- Nav Bar Menu -->
-            <ul>
-                <li> <button onclick="location.href='#'">Mercy <span>Mo 🛩️</span></button></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#sec1">About me</a></li>
-                <li><a href="#sec2">Travel Tips</a></li>
-                <li><a href="#sec3">Gallery</a></li>
-                <li><a href="#sec4">Contacts</a></li>
-            </ul>
+        <!--BS Navbar Start-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!--Logo Start-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="navbar-brand-img" src="./Assets/Media/MercyLogo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Logo Start-->
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec1">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec2">Travel Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec3">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sec4">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!--BS Navbar End-->
     </header>
     <br>
     <main>
         <!-- Background video -->
         <video id="background-video" autoplay loop muted>
-            <source src="Media/Desert.mp4" type="video/mp4">
+            <source src="./Assets/Media/Desert.mp4" type="video/mp4">
         </video>
         <!-- Call out -->
         <div class="call">
-            <img id="call-image" src="Media/zen.png" alt="Pozos Azules">
+            <img id="call-image" src="./Assets/Media/zen.png" alt="Pozos Azules">
             <h1>Hi! I'm Mercy the Traveler</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit hic ea natus accusantium possimus
                 laboriosam aliquid doloribus nisi nobis. Quos, debitis. Maxime eius quibusdam minima? Lorem ipsum dolor
@@ -61,19 +88,23 @@
     <h2 id="sec1"><a href="./Pages/About.html">About Me</a></h2>
     <section class="about-section1">
         <div>
-            <img src="../Media/Mercy.png" class="profile-img">
+            <img src="./Assets/Media/Mercy.png" class="profile-img">
             <h1>Hi, I'm Lorem the Traveler.</h1>
             <h3 id="sec1-button"><a href="./Pages/About.html">My Story</a></h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates exercitationem deleniti quo est nihil? Deserunt assumenda maxime maiores expedita ducimus corporis unde facilis similique mollitia nisi. Sit quos similique magni?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates exercitationem deleniti quo est
+                nihil? Deserunt assumenda maxime maiores expedita ducimus corporis unde facilis similique mollitia nisi.
+                Sit quos similique magni?</p>
         </div>
     </section>
     <h2 id="sec2">Travel Tips</h2>
     <section class="sec2-travel">
         <div class="sec2-travel-video">
             <a href="./Pages/travel.html">
-                <video id="travel-vid" src="Media/Prague.MP4" autoplay loop muted></video>
+                <video id="travel-vid" src="./Assets/Media/Prague.MP4" autoplay loop muted></video>
             </a>
-            <a href="./Pages/travel.html"> <h1>Lorem</h1></a>
+            <a href="./Pages/travel.html">
+                <h1>Lorem</h1>
+            </a>
             <a href="./Pages/travel.html">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
                     dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
@@ -81,23 +112,23 @@
             </a>
         </div>
         <div class="sec2-travel-video">
-            <a href="./Pages/travel.html">            
-                 <video id="travel-vid" src="Media/Venecia.MP4" autoplay loop muted></video>
-                </a>
-           <a href="./Pages/travel.html"> 
-            <h1>Lorem</h1>
-        </a>
-        <a href="./Pages/travel.html">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
-                dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
-                obcaecati vel.</p>
-        </a>
+            <a href="./Pages/travel.html">
+                <video id="travel-vid" src="./Assets/Media/Venecia.MP4" autoplay loop muted></video>
+            </a>
+            <a href="./Pages/travel.html">
+                <h1>Lorem</h1>
+            </a>
+            <a href="./Pages/travel.html">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
+                    dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
+                    obcaecati vel.</p>
+            </a>
         </div>
         <div class="sec2-travel-video">
             <a href="./Pages/travel.html">
-                <video id="travel-vid" src="Media/Italy2.MP4" autoplay loop muted></video>
+                <video id="travel-vid" src="./Assets/Media/Italy2.MP4" autoplay loop muted></video>
             </a>
-            <a href="./Pages/travel.html"> 
+            <a href="./Pages/travel.html">
                 <h1>Lorem</h1>
             </a>
             <a href="./Pages/travel.html">
@@ -110,64 +141,106 @@
     </section>
     <h2 id="sec3">Gallery</h2>
     <section class="sec3-gallery">
-        <div id="slider">
-            <figure>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/Water.png">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/Rest.jpeg">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/People.JPG">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/monument.png" alt="">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/Mer.png" alt="">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/graffiti.jpeg" alt="">
-                </a>
-                <a href="./Pages/gallery.html">
-                    <img src="Media/fade.JPG" alt="">
-                </a>
+        <!-- Complete Carousel Start -->
+        <div id="galleryC" class="carousel slide" data-bs-ride="carousel">
+            <!-- Dash Start -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#galleryC" data-bs-slide-to="6"></button>
 
-            </figure>
+            </div>
+            <!-- Dash End -->
+            <!-- carousel Images Start-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/Water.png" alt="Tominé">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/Rest.jpeg" alt="Bogotá">
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/People.JPG" alt="Bogotá">
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/monument.png" alt="Bogotá">
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/Mer.png" alt="Bogotá">
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/graffiti.jpeg" alt="Bogotá">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="./Assets/Media/fade.JPG" alt="Bogotá">
+                    </div>
+                </div>
+            </div>
+            <!-- carousel Images End-->
+            <!-- Left and right controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryC" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryC" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!-- Left and right controls -->
         </div>
+        <!-- Complete Carousel Start -->
     </section>
+    <!-- Contact me Start -->
     <h2 id="sec4"><a href="./Pages/contact.html">Contact Me</a></h2>
     <section class="sec4-contact">
-<a href="./Pages/contact.html">
-    <h1 class="h-primary">
-        Feel free to ask my any question about my travels, blog or if you have any business inquires.
-    </h1>
-    <div class="contact-card">
-        <i class="fa-solid fa-pen-nib"></i>
-        <!-- <h2>Online Form</h2> -->
-        <form class="form" id="form-null">
-            <div class="form-field">
-                <input type="text" id="form-name" class="form-input" placeholder="Name*" required=""
-                    style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
-                    value="" maxlength="2000">
+        <a href="./Pages/contact.html">
+            <h1 class="h-primary">
+                Feel free to ask my any question about my travels, blog or if you have any business inquires.
+            </h1>
+            <div class="contact-card">
+                <i class="fa-solid fa-pen-nib"></i>
+                <!-- <h2>Online Form</h2> -->
+                <form class="form" id="form-null">
+                    <div class="form-field">
+                        <input type="text" id="form-name" class="form-input" placeholder="Name*" required=""
+                            style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
+                            value="" maxlength="2000">
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="form-email" class="form-input" placeholder="E-mail*" required=""
+                            style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
+                            value="" maxlength="2000">
+                    </div>
+                    <div class="form-field">
+                        <input type="text" id="from-message" class="form-input" placeholder="Your message"
+                            style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
+                            value="" maxlength="2000">
+                    </div>
+                    <button type="submit" class="form-button">
+                        Submit
+                    </button>
+                </form>
             </div>
-            <div class="form-field">
-                <input type="email" id="form-email" class="form-input" placeholder="E-mail*" required=""
-                    style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
-                    value="" maxlength="2000">
-            </div>
-            <div class="form-field">
-                <input type="text" id="from-message" class="form-input" placeholder="Your message"
-                    style="border-color:#463f36;background-color:rgba(34, 42, 47, 0.12);--w-get-input-background-color:rgba(34, 42, 47, 0.12)"
-                    value="" maxlength="2000">
-            </div>
-            <button type="submit" class="form-button">
-                Submit
-            </button>
-        </form>
-    </div>
-</a>
+        </a>
     </section>
     <footer>
         <div class="redes">
@@ -182,6 +255,16 @@
     </footer>
     <a href="#" class="up"><i class="fa-solid fa-angle-up"></i></a>
 
+
+
+    <!--Scripts BS Start-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <!--Scripts BS End-->
 </body>
 
 </html>

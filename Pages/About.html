@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <!-- Icon for title -->
-    <link rel="shortcut icon" href="../Media/Mercy.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Assets/Media/Mercy.png" type="image/x-icon">
+    <!--BS 5.3 Start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!-- CSS -->
+<<<<<<< HEAD
     <link rel="stylesheet" href="../css/custom.css">
+=======
+    <link rel="stylesheet" href="../Assets/CSS/styles.css">
+>>>>>>> second
     <!-- The hamburger menu for small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Icons -->
@@ -19,56 +26,80 @@
 
 <body>
     <header>
-        <!-- Main Name Logo -->
-        <!--         <div class="logo"> <span><a href="#">Mercy Mo 🛩️</a></span></div> -->
-        <nav class="bar">
-            <!-- Nav Bar Menu -->
-            <ul>
-                <li> <button onclick="location.href='../index.html'">Mercy <span>Mo 🛩️</span></button></li>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./About.html">About me</a></li>
-                <li><a href="./travel.html">Travel Tips</a></li>
-                <li><a href="./gallery.html">Gallery</a></li>
-                <li><a href="./contact.html">Contacts</a></li>
-            </ul>
+        <!--BS Navbar Start-->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!--Logo Start-->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img" src="../Assets/Media/MercyLogo.png"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Logo Start-->
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./travel.html">Travel Tips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contacts</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+        <!--BS Navbar End-->
     </header>
     <br>
     <main class="about-body">
         <section class="about-section" id="hero">
             <div>
-                <img src="../Media/Mercy.png" class="profile-img">
+                <img src="../Assets/Media/Mercy.png" class="profile-img">
                 <h1>Hi, I'm Lorem the Traveler.</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates exercitationem deleniti quo est nihil? Deserunt assumenda maxime maiores expedita ducimus corporis unde facilis similique mollitia nisi. Sit quos similique magni?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates exercitationem deleniti quo est
+                    nihil? Deserunt assumenda maxime maiores expedita ducimus corporis unde facilis similique mollitia
+                    nisi. Sit quos similique magni?</p>
             </div>
         </section>
 
         <section class="about-section" id="hero">
-<div class="results">
-    <h3>Some of the Results I'm Proud of</h3>
-<div class="section-inner">
-    <div class="section-inner2">
-        <p class="about-data">###</p>
-        <p class="about-label">Lorem ipsum</p>
-    </div>
-    <div class="section-inner2">
-        <p class="about-data">###</p>
-        <p class="about-label">Lorem ipsum</p>
-    </div>
-    <div class="section-inner2">
-        <p class="about-data">###</p>
-        <p class="about-label">Lorem ipsum</p>
-    </div>
-    <div class="section-inner2">
-        <p class="about-data">###</p>
-        <p class="about-label">Lorem ipsum</p>
-    </div>
-</div>
-</div>
+            <div class="results">
+                <h3>Some of the Results I'm Proud of</h3>
+                <div class="section-inner">
+                    <div class="section-inner2">
+                        <p class="about-data">###</p>
+                        <p class="about-label">Lorem ipsum</p>
+                    </div>
+                    <div class="section-inner2">
+                        <p class="about-data">###</p>
+                        <p class="about-label">Lorem ipsum</p>
+                    </div>
+                    <div class="section-inner2">
+                        <p class="about-data">###</p>
+                        <p class="about-label">Lorem ipsum</p>
+                    </div>
+                    <div class="section-inner2">
+                        <p class="about-data">###</p>
+                        <p class="about-label">Lorem ipsum</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="about-section" id="hero">
             <div class="about-contact">
-                <a href="./contact.html"><h3>Ask Me Anything!</h3></a>
+                <a href="./contact.html">
+                    <h3>Ask Me Anything!</h3>
+                </a>
             </div>
         </section>
     </main>
@@ -85,6 +116,14 @@
         <p>© 2023 All rights reserved</p>
     </footer>
     <a href="#" class="up"><i class="fa-solid fa-angle-up"></i></a>
+    <!--Scripts BS Start-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <!--Scripts BS End-->
 </body>
 
 </html>
