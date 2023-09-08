@@ -1,5 +1,6 @@
 @import url("https://use.typekit.net/zfl7ylc.css");
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 /* ------------GENERAL CSS------------- */
 *:focus {
     outline: none;
@@ -16,7 +17,19 @@ html {
     scroll-behavior: smooth;
 }
 
-/*BS Overide specifications -personalization*/
+/* ------------General Font weight------------- */
+h1,
+h2,
+h3,
+p {
+    font-weight: lighter;
+}
+
+a {
+    font-weight: lighter;
+}
+
+/* ------------ BS Overide specifications -personalization ------------- */
 .navbar {
     background-color: #394867 !important;
 }
@@ -35,26 +48,14 @@ a.nav-link {
     /* transition: all 100ms ease-in-out; */
 }
 
-/* INDEX */
+/* ------------ Index ------------- */
 
-main {
+/* ------------ Main Background ------------- */
+#background-video {
     height: calc(100vh - 80px);
     width: 100%;
     background-size: cover;
     background-position: center;
-}
-
-main .call {
-    margin-top: 40px;
-    color: #fff;
-    width: 98%;
-    padding: 20px;
-    overflow: scroll;
-}
-
-main #background-video {
-    width: 100vw;
-    height: 100vh;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -62,41 +63,117 @@ main #background-video {
     top: 0;
     bottom: 0;
     z-index: -1;
+    opacity: 70%;
 }
 
-main .call #call-image {
-    float: right;
-    width: 300px;
-    height: 400px;
-    margin-left: 20px;
+/* ------------ Main Call Out ------------- */
+.call--img {
+    grid-area: img;
 }
 
-main .call h1 {
+.call--title {
+    grid-area: title;
+}
+
+.call--par {
+    grid-area: par;
+}
+
+.call--button {
+    grid-area: button;
+}
+
+.call {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "img title title"
+        "img par par"
+        "img  ......  button";
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+
+.call h1 {
+    display: flex;
+    align-items: center;
+    justify-self: center;
     color: #212A3E;
-    margin-bottom: 40px;
+
 }
 
-main .call p {
+#call-image {
+    display: flex;
+    justify-self: center;
+    height: 400px;
+}
+
+.call p {
+    display: flex;
+    align-items: center;
     font-size: 25px;
-    margin-bottom: 60px;
-    text-align: left;
-    text-overflow: ellipsis;
     color: #33415c;
-    margin-right: 20px;
+    text-overflow: scroll;
 }
 
-main .call a {
-    background-color: #394867;
-    opacity: 0.9;
+.call a {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    padding: 1rem;
+    background-color: hsl(220, 29%, 31%);
+    opacity: 0.8;
     color: #fff;
+    text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
     border-radius: 2rem;
 }
 
-main .call a:hover {
-    background-color: #333;
+.call a:hover {
+    opacity: 1;
 }
+
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+    .call {
+        display: block;
+        position: relative;
+        text-align: center;
+        background-color: hsla(0, 0%, 49%, 0.5);
+        margin-bottom: 20px;
+    }
+    #call-image {
+        visibility: hidden;
+    }
+
+    .call h1 {
+        position: absolute;
+        top: 20px;
+        left: 19px;
+    }
+
+    .call p {
+        position: absolute;
+        top: 90px;
+        text-overflow: scroll;
+    }
+
+    .call a {
+        position: absolute;
+        bottom: 40px;
+        left: 20px;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* ------------ General Body Sections ------------- */
 
 h2 {
     background-color: #394867;
@@ -108,10 +185,12 @@ h2 {
 }
 
 section {
-    background-color: hsl(221, 31%, 19%, 0.5);
+    background-color: hsla(0, 0%, 56%, 0.5);
     width: 100%;
     margin: 0;
 }
+
+/* ------------ Personalized Sections ------------- */
 
 #sec1 a {
     text-decoration: none;
@@ -184,45 +263,46 @@ section {
     text-decoration: none;
 }
 
-/* Carrousel attempt only with CSS*/
+/* ------------ BS Carrousel media queries ------------- */
 
-.d-flex{
+.d-flex {
     height: 53rem;
 }
-          /* Media Query for Mobile Devices */
-          @media (min-width: 360px) and (max-width: 480px) {
-            .d-flex {
-                height: 17rem;
-            }
-        }
-          
-        /* Media Query for low resolution  Tablets, Ipads */
-        @media (min-width: 481px) and (max-width: 767px) {
-            .d-flex {
-                height: 22rem;
-            }
-        }
-          
-        /* Media Query for Tablets Ipads portrait mode */
-        @media (min-width: 768px) and (max-width: 1024px){
-            .d-flex {
-                height: 27rem;
-            }
-        }
-          
-        /* Media Query for Laptops and Desktops */
-        @media (min-width: 1025px) and (max-width: 1280px){
-            .d-flex {
-                height: 32rem;
-            }
-        }
-          
-        /* Media Query for Large screens */
-        @media (min-width: 1281px) {
-            .d-flex{
-                height: 37rem;
-            }
-        }
+
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+    .d-flex {
+        height: 17rem;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .d-flex {
+        height: 22rem;
+    }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .d-flex {
+        height: 27rem;
+    }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .d-flex {
+        height: 32rem;
+    }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+    .d-flex {
+        height: 37rem;
+    }
+}
 
 /* footer */
 footer {
@@ -529,23 +609,80 @@ footer p {
 }
 
 #hero {
-<<<<<<<< HEAD:scss/custom.scss
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../Media/contactH.JPG');
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.JPG');
 }
 
 #about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('../Media/contactH.JPG');
-========
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.JPG');
+
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('./Media/contactH.JPG');
 }
 
 #about {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('./Media/contactH.JPG');
->>>>>>>> second:Assets/CSS/styles.css
 }
 
 
 /* -------------GALLERY------------- */
+
+.galeria {
+    /* height: 700px; */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 15px;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #000;
+    transition: all 0.9s;
+    filter: grayscale(100%);
+    box-shadow: 0 0 5px 0px #000;
+}
+
+.item:hover {
+    filter: grayscale(0%);
+    transform: scale(0.9);
+}
+
+.item1 {
+    background-image: url(img/13895584_541361716050977_1648486167064211724_n.jpg);
+}
+
+.item2 {
+    background-image: url(img/dog-g1bb290ed1_1280.jpg);
+}
+
+.item3 {
+    background-image: url(img/kagyana-2955466_1920.jpg);
+}
+
+.item4 {
+    background-image: url(img/red-throated-barbet-g89a760e69_1920.jpg);
+}
+
+.item5 {
+    background-image: url(img/river-7133713_640.jpg);
+}
+
+.item6 {
+    background-image: url(img/snake-ge05529e91_1920.jpg);
+}
+
+.item7 {
+    background-image: url(img/squirrel-g1bc920ae3_640.jpg);
+}
+
+.item8 {
+    background-image: url(img/woman-g6a47ec7b8_1280.jpg);
+}
+
 
 .body {
     height: -o-calc(100% - 65px);
