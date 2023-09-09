@@ -195,17 +195,19 @@ section {
 
 /* ------------ Personalized Sections ------------- */
 
+/* ------------ ABOUT ME SECTION 1------------- */
 #sec1 a {
     text-decoration: none;
     color: #f5f5dc;
 }
 
 #sec1-button a {
+    
     text-decoration: none;
     text-transform: uppercase;
-    color: #347f38;
+    font-weight: bold;
+    color: #4f648d;
 }
-
 
 .about-section1 {
     display: flex;
@@ -224,6 +226,7 @@ section {
     color: #fff;
 }
 
+/* ------------ TRAVEL TIPS SECTION 2------------- */
 .sec2-travel {
     display: flex;
     flex-direction: row;
@@ -265,6 +268,8 @@ section {
 .sec2-travel-video a {
     text-decoration: none;
 }
+
+/* ------------ GALLERY SECTION 3------------- */
 
 /* ------------ BS Carrousel media queries ------------- */
 
@@ -363,6 +368,7 @@ footer p {
     text-decoration: none;
     color: #fff;
 }
+/* ------------ PAGES CSS ------------- */
 
 /* -------------CONTACT ME------------- */
 
