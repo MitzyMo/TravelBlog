@@ -29,6 +29,24 @@ a {
     font-weight: lighter;
 }
 
+
+/* ------------ General Body Sections ------------- */
+
+h2 {
+    background-color: hsl(220, 29%, 31%, 0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+section {
+    background-color: hsla(0, 0%, 56%, 0.5);
+    width: 100%;
+    margin-bottom: 10px;
+}
+
 /* ------------ BS Overide specifications -personalization ------------- */
 .navbar {
     background-color: #394867 !important;
@@ -168,7 +186,7 @@ a.nav-link {
     }
 }
 
-/* ------------To be Set Up Later On ------------- */
+/* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {}
 
@@ -176,22 +194,6 @@ a.nav-link {
 @media (min-width: 768px) and (max-width: 1024px) {}
 
 
-/* ------------ General Body Sections ------------- */
-
-h2 {
-    background-color: #394867;
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-section {
-    background-color: hsla(0, 0%, 56%, 0.5);
-    width: 100%;
-    margin: 0;
-}
 
 /* ------------ Personalized Sections ------------- */
 
@@ -227,47 +229,82 @@ section {
 }
 
 /* ------------ TRAVEL TIPS SECTION 2------------- */
-.sec2-travel {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+
+
+#sec2-travel-vid-tip1{
+    height: 400PX;
+    grid-area: vid1;
+}
+#sec2-travel-title-tip1{
+    grid-area: title1;
+}
+#sec2-travel-text-tip1{
+    grid-area: text1;
+}
+#sec2-travel-vid-tip2{
+    height: 400PX;
+    grid-area: vid2;
+}
+#sec2-travel-title-tip2{
+    grid-area: title2;
+}
+#sec2-travel-text-tip2{
+    grid-area: text2;
+}
+#sec2-travel-vid-tip3{
+    height: 400PX;
+    grid-area: vid3;
+}
+#sec2-travel-title-tip3{
+    grid-area: title3;
+}
+#sec2-travel-text-tip3{
+    grid-area: text3;
 }
 
-#travel-vid {
-    margin-top: 20px;
-    height: 400PX;
-}
 
 .sec2-travel-video {
-    margin: 60px;
-    height: 600px;
-    width: 20%;
-    align-items: center;
-    text-align: justify;
-    font-size: 22px;
-    border-radius: 20px;
+    display: grid;
+    margin: 0 auto;
+    width: 80%;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "vid1 vid2 vid3"
+        "title1 title2 title3"
+        "text1 text2 text3";
 }
 
-.sec2-travel-video h1 {
-    color: #fff;
-    margin-bottom: 30px;
-}
 
-.sec2-travel-video p {
-    font-size: 16px;
-    margin-bottom: 60px;
-    text-align: left;
-    text-overflow: ellipsis;
-    color: #f5f5dc;
-    overflow: scroll;
-    margin-bottom: 20px;
-}
-
-.sec2-travel-video a {
+.sec2-travel-video a{
     text-decoration: none;
+    color: #f1f1f1;
+    justify-self: center;
 }
+
+
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+}
+
+/* ------------To be Set Up Later On If Needed------------- */
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+}
+
+
 
 /* ------------ GALLERY SECTION 3------------- */
 
@@ -312,7 +349,25 @@ section {
     }
 }
 
-/* footer */
+
+#sec3 a {
+    text-decoration: none;
+    color: #f5f5dc;
+}
+
+/* ------------ CONTACT ME SECTION 4 CSS FOR INDEX REUSED FROM THE PAGES CSS------------- */
+
+#sec4 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sec4-contact a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ------------ FOOTER ------------*/
 footer {
     background-color: #394867;
     color: #f5f5dc;
@@ -339,6 +394,7 @@ footer p {
     letter-spacing: 20px;
 }
 
+/* ------------ BACKUP BUTTON ------------*/
 .up {
     height: 40px;
     width: 40px;
@@ -359,18 +415,9 @@ footer p {
     color: #352F44;
 }
 
-#sec4 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.sec4-contact a {
-    text-decoration: none;
-    color: #fff;
-}
 /* ------------ PAGES CSS ------------- */
 
-/* -------------CONTACT ME------------- */
+/* -------------CONTACT ME REUSE FOR INDEX VIEW------------- */
 
 .contactB {
     background-image: url(../Media/Contact.png);
