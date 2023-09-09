@@ -44,7 +44,6 @@ a.nav-link {
     font-size: ;
     color: #fff;
     font-size: 20px;
-    font-weight: lighter;
     /* transition: all 100ms ease-in-out; */
 }
 
@@ -85,6 +84,8 @@ a.nav-link {
 
 .call {
     display: grid;
+    margin: 0 auto;
+    width: 80%;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -122,7 +123,7 @@ a.nav-link {
     align-items: center;
     justify-self: center;
     align-self: center;
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     background-color: hsl(220, 29%, 31%);
     opacity: 0.8;
     color: #fff;
@@ -162,16 +163,18 @@ a.nav-link {
 
     .call a {
         position: absolute;
-        bottom: 40px;
+        bottom: 3%;
         left: 20px;
     }
 }
 
+/* ------------To be Set Up Later On ------------- */
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {}
 
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {}
+
 
 /* ------------ General Body Sections ------------- */
 
