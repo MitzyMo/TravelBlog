@@ -83,6 +83,27 @@ a.nav-link {
     opacity: 70%;
 }
 
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+
+    #background-video {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        opacity: 70%;
+    }
+
+}
+
+
 /* ------------ Main Call Out ------------- */
 .call--img {
     grid-area: img;
@@ -163,6 +184,7 @@ a.nav-link {
         background-color: hsla(0, 0%, 49%, 0.5);
         margin-bottom: 20px;
     }
+
     #call-image {
         visibility: hidden;
     }
@@ -177,6 +199,9 @@ a.nav-link {
         position: absolute;
         top: 90px;
         text-overflow: scroll;
+        font-size: 17px;
+        text-align: left;
+        padding-left: 10px;
     }
 
     .call a {
@@ -197,14 +222,13 @@ a.nav-link {
 
 /* ------------ Personalized Sections ------------- */
 
-/* ------------ ABOUT ME SECTION 1------------- */
+/* ------------ ABOUT ME SECTION 1 CSS LEFT REUSE FORM PAGES------------- */
 #sec1 a {
     text-decoration: none;
     color: #f5f5dc;
 }
 
 #sec1-button a {
-    
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -218,47 +242,63 @@ a.nav-link {
     text-align: center;
     margin-bottom: 20px;
     background-size: cover;
-    /* Add this line */
     background-position: center center;
-    /* Add this line */
     background-repeat: no-repeat;
-    /* Add this line */
     background-attachment: fixed;
-    /* Add this line */
     color: #fff;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+    .about-section1--img {
+        width: 350px;
+    }
+
+    .sec1-text {
+        width: 350px;
+    }
 }
 
 /* ------------ TRAVEL TIPS SECTION 2------------- */
 
 
-#sec2-travel-vid-tip1{
+#sec2-travel-vid-tip1 {
     height: 400PX;
     grid-area: vid1;
 }
-#sec2-travel-title-tip1{
+
+#sec2-travel-title-tip1 {
     grid-area: title1;
 }
-#sec2-travel-text-tip1{
+
+#sec2-travel-text-tip1 {
     grid-area: text1;
 }
-#sec2-travel-vid-tip2{
+
+#sec2-travel-vid-tip2 {
     height: 400PX;
     grid-area: vid2;
 }
-#sec2-travel-title-tip2{
+
+#sec2-travel-title-tip2 {
     grid-area: title2;
 }
-#sec2-travel-text-tip2{
+
+#sec2-travel-text-tip2 {
     grid-area: text2;
 }
-#sec2-travel-vid-tip3{
+
+#sec2-travel-vid-tip3 {
     height: 400PX;
     grid-area: vid3;
 }
-#sec2-travel-title-tip3{
+
+#sec2-travel-title-tip3 {
     grid-area: title3;
 }
-#sec2-travel-text-tip3{
+
+#sec2-travel-text-tip3 {
     grid-area: text3;
 }
 
@@ -276,7 +316,8 @@ a.nav-link {
 }
 
 
-.sec2-travel-video a{
+.sec2-travel-video a {
+    cursor: pointer;
     text-decoration: none;
     color: #f1f1f1;
     justify-self: center;
@@ -285,30 +326,75 @@ a.nav-link {
 
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-}
+   
+    #sec2-travel-text-tip1 {
+        visibility: hidden;
+    }
+   
+    #sec2-travel-vid-tip2 {
+    visibility: hidden;
+    }
+ 
+    #sec2-travel-title-tip2 {
+        visibility: hidden;
+    }
+    
+    #sec2-travel-text-tip2 {
+        visibility: hidden;
+    }
+    
+    #sec2-travel-vid-tip3 {
+        visibility: hidden;
+    }
+    
+    #sec2-travel-title-tip3 {
+        visibility: hidden;
+    }
+    
+    #sec2-travel-text-tip3 {
+        visibility: hidden;
+    }
+    .sec2-travel-video {
+        display: block;
+        position: relative;
+        text-align: center;
+        height: 420px;
+    }
+  
+    #sec2-travel-vid-tip1{
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+    #sec2-travel-title-tip1 {
+        position: absolute;
+        top: 20px;
+        left: 70px;
+        font-weight: bold;
+    }
+
+    }
+
+
 
 /* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {
-}
+@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 /* Media Query for Large screens */
-@media (min-width: 1281px) {
-}
+@media (min-width: 1281px) {}
 
 
 
 /* ------------ GALLERY SECTION 3------------- */
 
-/* ------------ BS Carrousel media queries ------------- */
+/* ------------ BS Carrousel Media Queries ------------- */
 
 .d-flex {
     height: 53rem;
@@ -317,7 +403,7 @@ a.nav-link {
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
     .d-flex {
-        height: 17rem;
+        height: 12rem;
     }
 }
 
@@ -664,6 +750,10 @@ footer p {
     font-size: 20px;
 }
 
+.about-contact a:hover {
+    font-weight: bold;
+}
+
 #hero {
 
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.JPG');
@@ -678,6 +768,7 @@ footer p {
 #about {
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('./Media/contactH.JPG');
 }
+
 
 
 /* -------------GALLERY------------- */
