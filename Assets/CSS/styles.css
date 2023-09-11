@@ -63,7 +63,7 @@ a.nav-link {
     font-size: ;
     color: #fff;
     font-size: 20px;
-    /* transition: all 100ms ease-in-out; */
+    transition: all 100ms ease-in-out;
 }
 
 /* ------------ Index ------------- */
@@ -327,46 +327,48 @@ a.nav-link {
 
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-   
+
     #sec2-travel-text-tip1 {
         visibility: hidden;
     }
-   
+
     #sec2-travel-vid-tip2 {
-    visibility: hidden;
+        visibility: hidden;
     }
- 
+
     #sec2-travel-title-tip2 {
         visibility: hidden;
     }
-    
+
     #sec2-travel-text-tip2 {
         visibility: hidden;
     }
-    
+
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
-    
+
     #sec2-travel-title-tip3 {
         visibility: hidden;
     }
-    
+
     #sec2-travel-text-tip3 {
         visibility: hidden;
     }
+
     .sec2-travel-video {
         display: block;
         position: relative;
         text-align: center;
         height: 420px;
     }
-  
-    #sec2-travel-vid-tip1{
+
+    #sec2-travel-vid-tip1 {
         position: absolute;
         top: 10px;
         left: 50px;
     }
+
     #sec2-travel-title-tip1 {
         position: absolute;
         top: 20px;
@@ -374,7 +376,7 @@ a.nav-link {
         font-weight: bold;
     }
 
-    }
+}
 
 
 
@@ -476,12 +478,13 @@ a.nav-link {
 
 /*Body*/
 .contactB {
-    
+
     background-image: url(../Media/fade.JPG);
     background-position: 0;
     background-size: auto;
 
 }
+
 .box-main {
     display: flex;
     justify-content: center;
@@ -498,20 +501,22 @@ a.nav-link {
     text-align: center;
 }
 
-.h-primary{
+.h-primary {
     color: #fff;
     font-size: 20px;
     text-align: center;
     padding-top: 20px;
 }
+
 .form-label {
     color: #fff;
-font-weight: bold;
+    font-weight: bold;
 }
 
-section .container .py-4{
+section .container .py-4 {
     height: 100vh !important;
 }
+
 /* -------------TRAVEL BLOG------------- */
 
 .travelbody {
@@ -692,12 +697,11 @@ section .container .py-4{
 /* -------------GALLERY------------- */
 
 .galeria {
-    /* height: 700px; */
     width: 100%;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(8, 200px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 200px);
     padding: 20px;
     grid-gap: 15px;
 }
@@ -713,42 +717,81 @@ section .container .py-4{
 
 .item:hover {
     filter: grayscale(0%);
-    transform: scale(0.9);
+    transform: scale(1.2);
 }
 
 .item1 {
-    background-image: url(img/13895584_541361716050977_1648486167064211724_n.jpg);
+    background-image: url(../Media/zen.png);
 }
 
 .item2 {
-    background-image: url(img/dog-g1bb290ed1_1280.jpg);
+    background-image: url(../Media/People.JPG);
 }
 
 .item3 {
-    background-image: url(img/kagyana-2955466_1920.jpg);
+    background-image: url(../Media/Water.png);
 }
 
 .item4 {
-    background-image: url(img/red-throated-barbet-g89a760e69_1920.jpg);
+    background-image: url(../Media/fade.JPG);
 }
 
 .item5 {
-    background-image: url(img/river-7133713_640.jpg);
+    background-image: url(../Media/graffiti.jpeg);
 }
 
 .item6 {
-    background-image: url(img/snake-ge05529e91_1920.jpg);
+    background-image: url(../Media/Rest.jpeg);
 }
 
 .item7 {
-    background-image: url(img/squirrel-g1bc920ae3_640.jpg);
+    background-image: url(../Media/monument.png);
 }
 
 .item8 {
-    background-image: url(img/woman-g6a47ec7b8_1280.jpg);
+    background-image: url(../Media/Deck.png);
 }
 
+.item9 {
+    background-image: url(../Media/MedellínCent.png);
+}
 
+.item10 {
+    background-image: url(../Media/MedMuseam.png);
+}
+
+.item11 {
+    background-image: url(../Media/Flower.JPG);
+    
+}
+
+.item12 {
+    background-image: url(../Media/Poet.jpeg);
+}
+
+.item13 {
+    background-image: url(../Media/contactH.JPG);
+}
+
+.item14 {
+    background-image: url(../Media/Centro.png);
+}
+
+.item15 {
+    background-image: url(../Media/Bill.jpg);
+}
+
+.item16 {
+    background-image: url(../Media/Monserrat.JPG);
+}
+
+.item17 {
+    background-image: url(../Media/Bird.png);
+    background-position: left;
+}
+.item18 {
+    background-image: url(../Media/Ishira.png);
+}
 .body {
     height: -o-calc(100% - 65px);
     /* opera */
@@ -786,11 +829,164 @@ section .container .py-4{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 400ms ease-out;
+    transition: transform 400ms ease-OUT;
 }
 
 .gallery-image:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
+}
+
+/* inician las media queries */
+
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+    .galeria {
+        /* grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px); */
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(16, 200px);
+    }
+
+    .nosotros {
+        display: flex;
+    }
+
+    .nleft {
+        width: 50%;
+    }
+
+    .nright {
+        width: 50%;
+    }
+
+    .item2 {
+        background-size: contain;
+    }
+}
+
+
+@media only screen and (min-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(21, 7rem );
+    }
+
+    /* First COlumn */
+    .item1 {
+        /* Piedras */
+        grid-column: 1/2;
+        grid-row: 1/7;
+    }
+
+    .item5 {
+        /* Graffiti */
+        grid-column: 1/2;
+        grid-row: 7/9;
+    }
+    .item7 {
+        /* Monument */
+        grid-column: 1/2;
+        grid-row: 9/12;
+    }
+
+    .item9 {
+        /* Medellin center */
+        grid-column: 1/2;
+        grid-row: 12/16;
+    }
+
+    .item17 {
+        /* Bird */
+        grid-column: 1/2;
+        grid-row: 16/20;
+    }
+
+    .item16 {
+        /* Monserrat */
+        grid-column: 1/2;
+        grid-row: 20/24;
+    }
+    .item4 {
+        /* Fade */
+        grid-column: 1/2;
+        grid-row: 24/44;
+    }
+
+    /* Second Column */
+
+    .item2 {
+        /* People */
+        grid-column: 2/3;
+        grid-row: 1/7;
+    }
+    .item12 {
+        /* Poet */
+        grid-column: 2/3;
+        grid-row: 7/14;
+    }
+    .item18 {
+        /* Ishira */
+        grid-column: 2/3;
+        grid-row: 14/21;
+    }
+    .item14 {
+        /* Bogotá Center */
+        grid-column: 2/3;
+        grid-row: 21/44;
+    }
+
+
+    /*------- Third Column -------*/
+    .item3 {
+        /* Water */
+        grid-column: 3/4;
+        grid-row: 1/7;
+    }
+
+    .item6 {
+        /* Restaurant */
+        grid-column: 3/4;
+        grid-row: 7/9;
+    }
+
+    .item8 {
+        /* Deck */
+        grid-column: 3/4;
+        grid-row: 9/12;
+    }
+
+    .item10 {
+        /* Museum */
+        grid-column: 3/4;
+        grid-row: 12/16;
+    }
+
+    .item13 {
+        /* Blue Pond */
+        grid-column: 3/4;
+        grid-row: 16/20;
+    }
+
+    .item15 {
+        /* Bill */
+        grid-column: 3/4;
+        grid-row: 20/24;
+    }
+    .item11 {
+        /* Flower */
+        grid-column: 3/4;
+        grid-row: 24/44;
+
+    }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 200px);
+    }
 }
 
 /* ------------ FOOTER ------------*/
@@ -821,20 +1017,18 @@ footer p {
 
 }
 
+/* ------------To be Set Up Later On If Needed------------- */
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {}
 
-    
-    /* ------------To be Set Up Later On If Needed------------- */
-    /* Media Query for low resolution  Tablets, Ipads */
-    @media (min-width: 481px) and (max-width: 767px) {}
-    
-    /* Media Query for Tablets Ipads portrait mode */
-    @media (min-width: 768px) and (max-width: 1024px) {}
-    
-    /* Media Query for Laptops and Desktops */
-    @media (min-width: 1025px) and (max-width: 1280px) {}
-    
-    /* Media Query for Large screens */
-    @media (min-width: 1281px) {}
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {}
 
 /* ------------ BACKUP BUTTON ------------*/
 .up {
