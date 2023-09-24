@@ -22,39 +22,44 @@
 
 <body class="contactB">
     <header>
-        <!--BS Navbar Start-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!--Logo Start-->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="navbar-brand-img"
-                        src="../Assets/Media/MercyLogo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Logo Start-->
-            </div>
+      <!--BS Navbar Start-->
+      <nav class="navbar navbar-expand-sm navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img style="height: 50px;" src="../Assets/Media/MercyLogo.png" alt="logo"/>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="container-fluid">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                      <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./About.html">About me</a>
+                      <a class="nav-link" href="./About.html">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./travel.html">Travel Tips</a>
+                      <a class="nav-link" href="./travel.html">Travel Tips</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./gallery.html">Gallery</a>
+                      <a class="nav-link" href="./gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contacts</a>
+                      <a class="nav-link" href="./contact.html">Contacts</a>
                     </li>
-                </ul>
-            </div>
-        </nav>
-        <!--BS Navbar End-->
+                  </ul>
+              </div>
+        </div>
+      </nav>
+      <!--BS Navbar End-->
+      
     </header>
     <br>
     <section>
@@ -67,12 +72,12 @@
     <hr>
     <section>
         <h1 class="h-primary">
-            Feel free to ask my any question about my travels, blog or if you have any business inquires.
+            Feel free to ask me any questions about my travels, or blog or if you have any business inquiries.
         </h1>
         <div class="container py-4">
 
             <!-- Bootstrap 5 starter form -->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+            <form id="contactForm" >
 
                 <!-- Name input -->
                 <div class="mb-3">
@@ -120,17 +125,22 @@
 
         </div>
     </section>
-    <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/mercymolano?utm_source=qr">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://co.linkedin.com/in/mercymoreno">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
+    <!-------Footer Start------->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <img src="../Assets/Media/MercyFooter.png" alt="">
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 All rights reserved</span>
         </div>
-        <p>© 2023 All rights reserved</p>
-    </footer>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="https://wa.link/ycoea4"><i class="fa-brands fa-whatsapp fa-beat"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a></li>
+        </ul>
+      </footer>
+      <!-- Footer End -->
     <a href="#" class="up"><i class="fa-solid fa-angle-up"></i></a>
 
 

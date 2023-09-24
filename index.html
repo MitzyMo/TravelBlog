@@ -1,83 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- SEO Position Description Start -->
+    <meta
+      name="description"
+      content="Explore exotic destinations, travel tips, and captivating stories on our adventurous travel blog. Embark on a journey of discovery with our expert guides!"
+    />
+    <!-- SEO Position Description End -->
     <!-- Title -->
     <title>Mercy Mo</title>
-    <!-- Icon for title -->
-    <link rel="shortcut icon" href="./Assets/Media/Mercy.png" type="image/x-icon">
+    <!-- Icon for pages -->
+    <link
+      rel="shortcut icon"
+      href="./Assets/Media/Mercy.png"
+      type="image/x-icon"
+    />
     <!--BS 5.3 Start-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="./Assets/CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/styles.css" />
     <!-- The hamburger menu for small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <header>
-        <!--BS Navbar Start-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-            <!--Logo Start-->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="navbar-brand-img" src="./Assets/Media/MercyLogo.png"
-                        alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--Logo Start-->
-            </div>
+      <!--BS Navbar Start-->
+      <nav class="navbar navbar-expand-sm navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img style="height: 50px;" src="./Assets/Media/MercyLogo.png" alt="logo"/>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="container-fluid">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                      <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec1">About me</a>
+                      <a class="nav-link" href="./Pages/About.html">About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec2">Travel Tips</a>
+                      <a class="nav-link" href="./Pages/travel.html">Travel Tips</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec3">Gallery</a>
+                      <a class="nav-link" href="./Pages/gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sec4">Contacts</a>
+                      <a class="nav-link" href="./Pages/contact.html">Contacts</a>
                     </li>
-                </ul>
-            </div>
-        </nav>
-        <!--BS Navbar End-->
-    </header>
-    <br>
-    <main>
-        <!-- Background video -->
-        <video id="background-video" autoplay loop muted>
-            <source src="./Assets/Media/Desert.mp4" type="video/mp4">
-        </video>
-        <!-- Call out -->
-        <div class="call">
-            <img class="call--img" id="call-image" src="./Assets/Media/zen.png" alt="Pozos Azules">
-            <h1 class="call--title">Hi! I'm Mo the Traveler</h1>
-            <p class="call--par">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi explicabo error
-                corrupti eveniet ipsa doloremque atque placeat, optio delectus consequatur repellat et illo dolorem
-                nesciunt dolores corporis veritatis, nisi totam.</p>
-            <a class="call--button" href="./Pages/travel.html">Travel Tips</a>
+                  </ul>
+              </div>
         </div>
-    </main>
-    <!-- (h2#sec${Mi Título $}+section.section.sec$)*4 -->
-    <h2 id="sec1"><a href="./Pages/About.html">About Me</a></h2>
-    <!--SECTION 1 ABOUT ME-->
-    <section class="about-section1">
+      </nav>
+      <!--BS Navbar End-->
+    </header>
+    <main>
+      <!-------Banner Start------->
+      <section class="banner" id="home">
+        <div class="banner-overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-12">
+                <div class="banner-text">
+                  <h2 class="white">Hi! I'm Lorem ipsum the Traveler</h2>
+                  <p class="banner-text white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur hendrerit neque massa, sit amet tristique ante
+                    porta ut. In sodales et justo vel vulputate. Pellentesque
+                    habitant morbi tristique senectus et netus et malesuada
+                    fames ac turpis egestas.
+                  </p>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="./Assets/Media/zen.png"
+                          class="wow fadeInUp"
+                          data-wow-delay="0.4s"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="images/playstore.png"
+                          class="wow fadeInUp"
+                          data-wow-delay="0.7s"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-12">
+                <img
+                  src="./Assets/Media/zen.png"
+                  class="img-fluid wow fadeInUp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="svg-wave">
+          <img class="svg-hero" src="./Assets/Media/wave.svg" />
+        </span>
+      </section>
+
+      <!-------Banner End------->
+
+      <!-------About End------->
+
+      <section class="about section-padding prelative about-section1" id="about">
         <div>
             <img src="./Assets/Media/Mercy.png" style="filter:sepia(60%)" class="profile-img about-section1--img">
             <h1>Hi, I'm Mo the Traveler.</h1>
@@ -87,46 +144,55 @@
                 nihil? Deserunt assumenda maxime maiores expedita ducimus corporis unde facilis similique mollitia nisi.
                 Sit quos similique magni?</p>
         </div>
-    </section>
-    <!--SECTION 2 TRAVEL TIPS-->
-    <h2 id="sec2">Travel Tips</h2>
-    <section class="sec2-travel">
-        <div class="sec2-travel-video">
-            <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip1" src="./Assets/Media/Prague.MP4" autoplay loop
-                    muted></video></a>
-            <a id="sec2-travel-title-tip1" href="./Pages/travel.html">
-                <h1>Lorem 1</h1>
-            </a>
-            <a id="sec2-travel-text-tip1" href="./Pages/travel.html">
-                <p> Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Sunt tempore, dicta quas enim provident ut,
-                    dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
-                    obcaecati vel.</p>
-            </a>
-            <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip2" src="./Assets/Media/Venecia.MP4" autoplay
-                    loop muted></video></a>
-            <a id="sec2-travel-title-tip2" href="./Pages/travel.html">
-                <h1>Lorem 2</h1>
-            </a>
-            <a id="sec2-travel-text-tip2" href="./Pages/travel.html">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
-                    dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
-                    obcaecati vel.</p>
-            </a>
-            <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip3" src="./Assets/Media/Italy2.MP4" autoplay loop
-                    muted></video></a>
-            <a id="sec2-travel-title-tip3" href="./Pages/travel.html">
-                <h1>Lorem 3</h1>
-            </a>
-            <a id="sec2-travel-text-tip3" href="./Pages/travel.html">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
-                    dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
-                    obcaecati vel.</p>
-            </a>
-    </section>
-    <!--SECTION 3 GALLERY-->
+      </section>
+      <!-------About End------->
+
+      <!-------Travel Tips Start------->
+      <section class="video-section prelative text-center white" id="tips">
+        <h2 >Travel Tips</h2>
+        <div class="section-padding video-overlay">
+          <div class="container">
+            <div class="sec2-travel-video">
+                <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip1" src="./Assets/Media/Prague.MP4" autoplay loop
+                        muted></video></a>
+                <a id="sec2-travel-title-tip1" href="./Pages/travel.html">
+                    <h1>Lorem 1</h1>
+                </a>
+                <a id="sec2-travel-text-tip1" href="./Pages/travel.html">
+                    <p> Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Sunt tempore, dicta quas enim provident ut,
+                        dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
+                        obcaecati vel.</p>
+                </a>
+                <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip2" src="./Assets/Media/Venecia.MP4" autoplay
+                        loop muted></video></a>
+                <a id="sec2-travel-title-tip2" href="./Pages/travel.html">
+                    <h1>Lorem 2</h1>
+                </a>
+                <a id="sec2-travel-text-tip2" href="./Pages/travel.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
+                        dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
+                        obcaecati vel.</p>
+                </a>
+                <a href="./Pages/travel.html"><video id="sec2-travel-vid-tip3" src="./Assets/Media/Italy2.MP4" autoplay loop
+                        muted></video></a>
+                <a id="sec2-travel-title-tip3" href="./Pages/travel.html">
+                    <h1>Lorem 3</h1>
+                </a>
+                <a id="sec2-travel-text-tip3" href="./Pages/travel.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempore, dicta quas enim provident ut,
+                        dolorem qui impedit est optio eligendi vitae. Veritatis nostrum voluptatibus id perferendis quia
+                        obcaecati vel.</p>
+                </a>
+          </div>
+        </div>
+      </section>
+      <!-------Travel Tips End------->
+
+<!-------Gallery Start------->
+<section class="testimonial section-padding sec3-gallery" id="gallery">
+
     <h2 id="sec3"><a href="./Pages/gallery.html">Gallery</a></h2>
-    <section class="sec3-gallery">
         <!-- Complete Carousel Start -->
         <div id="galleryC" class="carousel slide" data-bs-ride="carousel">
             <!-- Dash Start -->
@@ -194,92 +260,211 @@
             <!-- Left and right controls -->
         </div>
         <!-- Complete Carousel Start -->
-    </section>
-    <!--SECTION 4 CONTACT ME START-->
-    <h2 id="sec4"><a href="./Pages/contact.html">Contact Me</a></h2>
-    <section class="sec4-contact">
-        <a href="./Pages/contact.html">
-            <h1 class="h-primary">
-                Feel free to ask my any question about my travels, blog or if you have any business inquires.
-            </h1>
-        </a>
-        <!-- Wrapper container -->
-        <div class="container py-4">
+  </section>
+  
+  <!-------Gallery End------->
 
-            <!-- Bootstrap 5 starter form -->
-            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+      <!-------Contact Start------->
+      <section class="contact section-padding" data-scroll-index="6">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="sectioner-header text-center">
+                <h3>Ask Me Anything!</h3>
+                <span class="line"></span>
+                <p>
+                  Sed quis nisi nisi. Proin consectetur porttitor dui sit amet
+                  viverra. Fusce sit amet lorem faucibus, vestibulum ante in,
+                  pharetra ante.
+                </p>
+              </div>
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-8">
+                    <form id="contact_form" action="">
+                      <!-- Name input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="name">Name</label>
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          placeholder="Name"
+                          data-sb-validations="required"
+                        />
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="name:required"
+                        >
+                          Name is required.
+                        </div>
+                      </div>
 
-                <!-- Name input -->
-                <div class="mb-3">
-                    <label class="form-label" for="name">Name</label>
-                    <input class="form-control" id="name" type="text" placeholder="Name"
-                        data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                </div>
+                      <!-- Email address input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="emailAddress"
+                          >Email Address</label
+                        >
+                        <input
+                          class="form-control"
+                          id="emailAddress"
+                          type="email"
+                          placeholder="Email Address"
+                          data-sb-validations="required, email"
+                        />
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:required"
+                        >
+                          Email Address is required.
+                        </div>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="emailAddress:email"
+                        >
+                          Email Address Email is not valid.
+                        </div>
+                      </div>
 
-                <!-- Email address input -->
-                <div class="mb-3">
-                    <label class="form-label" for="emailAddress">Email Address</label>
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
-                        data-sb-validations="required, email" />
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.
+                      <!-- Message input -->
+                      <div class="mb-3">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          type="text"
+                          placeholder="Message"
+                          style="height: 10rem"
+                          data-sb-validations="required"
+                        ></textarea>
+                        <div
+                          class="invalid-feedback"
+                          data-sb-feedback="message:required"
+                        >
+                          Message is required.
+                        </div>
+                      </div>
+
+                      <!-- Form submissions success message -->
+                      <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                          Form submission successful!
+                        </div>
+                      </div>
+
+                      <!-- Form submissions error message -->
+                      <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">
+                          Error sending message!
+                        </div>
+                      </div>
+
+                      <!-- Form submit button -->
+                      <div class="d-grid">
+                        <button
+                          class="btn btn-primary btn-lg"
+                          id="submitButton"
+                          type="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="contact-info white">
+                      <div class="contact-item media">
+                        <i
+                          class="fa fa-map-marker-alt media-left media-right-margin"
+                        ></i>
+                        <div class="media-body">
+                          <p class="text-uppercase">Address</p>
+                          <p class="text-uppercase">New Delhi, India</p>
+                        </div>
+                      </div>
+                      <div class="contact-item media">
+                        <i
+                          class="fa fa-mobile media-left media-right-margin"
+                        ></i>
+                        <div class="media-body">
+                          <p class="text-uppercase">Phone</p>
+                          <p class="text-uppercase">
+                            <a class="text-white" href="tel:+15173977100"
+                              >009900990099</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="contact-item media">
+                        <i
+                          class="fa fa-envelope media-left media-right-margin"
+                        ></i>
+                        <div class="media-body">
+                          <p class="text-uppercase">E-mail</p>
+                          <p class="text-uppercase">
+                            <a
+                              class="text-white"
+                              href="mailto:abcdefg@gmail.com"
+                              >yogeshsingh.now@gmail.com</a
+                            >
+                          </p>
+                        </div>
+                      </div>
+                      <div class="contact-item media">
+                        <i
+                          class="fa fa-clock media-left media-right-margin"
+                        ></i>
+                        <div class="media-body">
+                          <p class="text-uppercase">Working Hours</p>
+                          <p class="text-uppercase">
+                            Mon-Fri 9.00 AM to 5.00PM.
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not
-                        valid.</div>
+                  </div>
                 </div>
-
-                <!-- Message input -->
-                <div class="mb-3">
-                    <label class="form-label" for="message">Message</label>
-                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
-                        data-sb-validations="required"></textarea>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                </div>
-
-                <!-- Form submissions success message -->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">Form submission successful!</div>
-                </div>
-
-                <!-- Form submissions error message -->
-                <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                </div>
-
-                <!-- Form submit button -->
-                <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-                </div>
-
-            </form>
-
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!--FOOTER-->
-    <footer>
-        <div class="redes">
-            <a href="https://www.instagram.com/mercymolano?utm_source=qr">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://co.linkedin.com/in/mercymoreno">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
-        <p>© 2023 All rights reserved</p>
+      </section>
+
+      <!-------Contact End------->
+    </main>
+
+    <!-------Footer Start------->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <img src="./Assets/Media/MercyFooter.png" alt="">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 All rights reserved</span>
+      </div>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-beat"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://wa.link/ycoea4"><i class="fa-brands fa-whatsapp fa-beat"></i></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-linkedin fa-beat"></i></a></li>
+      </ul>
     </footer>
+    <!-- Footer End -->
     <!--GO BACK UP BUTTON-->
     <a href="#" class="up"><i class="fa-solid fa-angle-up"></i></a>
 
     <!--Scripts BS Start-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
     <!-- SB Forms JS for contact card -->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <!--Scripts BS End-->
-</body>
-
+  </body>
 </html>
