@@ -633,7 +633,7 @@ input {
   animation-fill-mode: forwards;
 }
 
-/*------ Animation start------*/
+/*------ Animation End------*/
 /* -------------TRAVEL BLOG------------- */
 /* Create two unequal columns that floats next to each other */
 /* Left column */
@@ -1029,7 +1029,7 @@ input {
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .galeria {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 200px);
+    grid-template-rows: repeat(9, 200px);
   }
 }
 /* ------------To be Set Up Later On If Needed------------- */
