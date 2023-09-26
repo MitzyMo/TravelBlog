@@ -14,6 +14,7 @@ $color4s: rgb(187, 191, 202,0.7);
 $color5: white;
 $color6: black;
 $color7: rgb(73, 84, 100);
+$color8:rgb(122, 96, 255);
 $xs1: 10px;
 $xs2: 20px;
 $xs3: 30px;
@@ -184,10 +185,16 @@ h3 {
 	width: 100%;
 	height: 100%;	
 }
-
+.banner-content ul{
+   list-style: none;
+}
+.banner-content a{
+    color: $color5;
+ }
 .banner-title{
     color: $color5;
     padding: $xs2;
+    z-index: 100;
 }
 .banner-text {
     padding-right:$md1;
@@ -215,7 +222,7 @@ h3 {
 /*---- Travel Tips Background End ----*/
 
 .contact {
-	background: #BBBFCA;
+	background: $color4;
 	background: linear-gradient(to left, $color1 35%, $color2 46%);
 	padding:$md3 0px;
 	position:relative;
@@ -234,7 +241,7 @@ h3 {
 	resize: none;
 	padding: 1rem;
 	height: 150px;
-	background: #fff;
+	background: $color5;
 	border: 0;
 	border-radius: $xs3;
 	margin-bottom: 1rem;
@@ -246,7 +253,7 @@ h3 {
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
-	background: #BBBFCA;
+	background: $color4;
 	background: linear-gradient(to left, $color4, $color3);
 }
 .contact-item {
@@ -376,7 +383,7 @@ h3 {
 .sec2-travel-video a {
     cursor: pointer;
     text-decoration: none;
-    color: #f1f1f1;
+    color: $color5;
     justify-self: center;
 }
 
@@ -537,15 +544,15 @@ input {
 	color: #fff;
 	border-radius: 2rem;
 	border: 0;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: $color8;
+	background: linear-gradient(to left, $color8, $color3);
 	cursor:pointer;
 }
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: $color8;
+	background: linear-gradient(to left, $color8, $color3);
 }
 .contact-item {
 	margin:23px 0px;
@@ -557,7 +564,152 @@ input {
 	line-height: 20px;
 	margin: 0;
 }
+/*------ Animation start------*/
+@-webkit-keyframes extend {
+    0% {
+        width: 600px;
+        height: 200px;
+        border-radius: 100px;
+        } 10% {
+        width: 610px;
+        height: 210px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 600px;
+        height: 200px;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #6fb07f;
+        }
+    }
+@keyframes extend {
+    0% {
+        width: 600px;
+        height: 200px;
+        border-radius: 100px;
+        } 10% {
+        width: 610px;
+        height: 210px;
+        background: #fff;
+        margin-left: - 5px;
+        margin-top: - 5px;
+        } 20% {
+        width: 600px;
+        height: 200px;
+        background: #6fb07f;
+        margin-left: 0px;
+        margin-top: 0px;
+        } 100% {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        margin-left: 190px;
+        background: #6fb07f;
+        }
+    }
 
+@-webkit-keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+@keyframes disappear {
+    0% {
+        opacity: 1;
+        } 20% {
+        color: #fff;
+        } 100% {
+        opacity: 0;
+        }
+    }
+
+@-webkit-keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+@keyframes appear {
+    0% {
+        opacity: 0;
+        } 70% {
+        opacity: 0;
+        } 100% {
+        opacity: 1;
+        }
+    }
+.cont, submit {
+    border: none;
+    border-width: 1px;
+    width: 600px;
+    height: 200px;
+    /*border-radius*/
+    border-radius: 100px;
+    background: #fff;
+    position: absolute;
+    border: 5px solid #6fb07f;
+    font-size: 48px;
+    color: #6fb07f
+    }
+
+.cont img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0
+    }
+
+.cont:focus {
+    /*animation*/
+    -webkit-animation: extend 1s ease-in-out;
+    -ms-animation: extend 1s ease-in-out;
+    animation: extend 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.cont:focus > span {
+    /*animation*/
+    -webkit-animation: disappear 1s ease-in-out;
+    -ms-animation: disappear 1s ease-in-out;
+    animation: disappear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+.cont:focus > img {
+    /*animation*/
+    -webkit-animation: appear 1s ease-in-out;
+    -ms-animation: appear 1s ease-in-out;
+    animation: appear 1s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    /* Chrome, Safari, Opera */
+    animation-fill-mode: forwards
+    }
+
+    /*------ Animation start------*/
 /* -------------TRAVEL BLOG------------- */
 
 /* Create two unequal columns that floats next to each other */
