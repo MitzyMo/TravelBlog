@@ -32,9 +32,22 @@ a {
   text-decoration: none;
   animation: 1.5s ease 0s infinite pulse;
   cursor: pointer;
+  color: rgb(33, 53, 85);
+}
+
+.body {
+  height: -o-calc(100% - 65px);
+  /* opera */
+  /* google, safari */
+  height: -moz-calc(100% - 65px);
+  /* firefox */
+  background-color: #fafafa;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .footer {
+  margin-top: 10px;
   padding: 20px;
   letter-spacing: 5px;
 }
@@ -71,18 +84,6 @@ h3 {
 
 .sectioner-header p {
   font-size: 17px;
-}
-
-.sectioner-header {
-  width: 90%;
-}
-
-.sectioner-header p {
-  font-size: 14px;
-}
-
-.section-content {
-  margin-top: 40px;
 }
 
 .media-right-margin {
@@ -208,12 +209,12 @@ h3 {
 }
 
 /*---- Banner End ----*/
-/*---- Travel Tips Background ----*/
+/*---- Travel Tips Background End----*/
 .video-overlay {
   background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
 }
 
-/*---- Travel Tips Background ----*/
+/*---- Travel Tips Background End ----*/
 .contact {
   background: #BBBFCA;
   background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
@@ -458,57 +459,74 @@ h3 {
 /*Body*/
 .contactB {
   background-image: url(../Media/fade.JPG);
-  background-position: 0;
-  background-size: auto;
+  background-size: cover;
 }
 
-#contact_form input {
-  border: 1px solid hsla(0, 0%, 89%, 0.5);
+#contact_form {
+  margin-bottom: 20px;
 }
 
-.box-main {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
+.contact-item {
+  font-size: 12px;
+}
+
+#contact_form .form-input {
+  border: 1px solid #e4e4e4;
+}
+
+input {
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: 0;
+}
+
+#contact_form textarea {
+  resize: none;
+  padding: 1rem;
+  height: 150px;
+  background: #fff;
+  border: 0;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-grad {
+  padding: 0.7rem 2rem;
+  display: inline-block;
   color: #fff;
-  margin: auto;
-  height: 80%;
-  font-weight: bold;
+  border-radius: 2rem;
+  border: 0;
+  background: #7a60ff;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
+  cursor: pointer;
 }
 
-.text-big {
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
+.contact-info {
+  padding: 2rem 2rem 1rem;
+  border-radius: 8px;
+  background: #7a60ff;
+  background: linear-gradient(to left, #7a60ff, #cd9ffa);
 }
 
-.h-primary {
-  color: #fff;
+.contact-item {
+  margin: 23px 0px;
+}
+
+.contact-item i {
   font-size: 20px;
-  text-align: center;
-  padding-top: 20px;
 }
 
-.form-label {
-  color: #fff;
-  font-weight: bold;
-}
-
-section .container .py-4 {
-  height: 100vh !important;
+.contact-item p {
+  line-height: 20px;
+  margin: 0;
 }
 
 /* -------------TRAVEL BLOG------------- */
-.travelbody {
-  height: -o-calc(100% - 65px);
-  /* opera */
-  /* google, safari */
-  height: -moz-calc(100% - 65px);
-  /* firefox */
-  padding: 20px;
-  background: #f1f1f1;
-}
-
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
@@ -570,17 +588,6 @@ section .container .py-4 {
   }
 }
 /* -------------ABOUT ME------------- */
-.aboutbody {
-  margin: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: -o-calc(100vh - 75px);
-  /* opera */
-  /* google, safari */
-  height: -moz-calc(100vh - 75px);
-  /* firefox */
-}
-
 .about-section {
   border: 1px solid black;
   display: flex;
@@ -756,15 +763,6 @@ section .container .py-4 {
 
 .item18 {
   background-image: url(../Media/Ishira.png);
-}
-
-.body {
-  height: -o-calc(100% - 65px);
-  /* opera */
-  /* google, safari */
-  height: -moz-calc(100% - 65px);
-  /* firefox */
-  background-color: #fafafa;
 }
 
 .container {
