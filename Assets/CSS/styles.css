@@ -1,1052 +1,946 @@
+@charset "UTF-8";
 @import url("https://use.typekit.net/zfl7ylc.css");
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-
 /* ------------GENERAL CSS------------- */
 *:focus {
-    outline: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /*Respetar los padding adicionales*/
-    font-family: "museo-slab", serif;
-    font-weight: lighter;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*Respetar los padding adicionales*/
+  font-family: "museo-slab", "sans";
+  font-weight: lighter;
 }
 
 /* ------------Smooth Scrolling------------- */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-/* ------------General Font weight------------- */
+/* ------------General Data------------- */
 h1,
 h2,
 h3,
 p {
-    font-weight: lighter;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 23px;
 }
 
 a {
-    font-weight: lighter;
+  font-weight: lighter;
+  text-decoration: none;
+  animation: 1.5s ease 0s infinite pulse;
+  cursor: pointer;
+  color: rgb(33, 53, 85);
 }
 
-
-/* ------------ General Body Sections ------------- */
-
-h2 {
-    background-color: hsl(220, 29%, 31%, 0.7);
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-    text-transform: uppercase;
-    padding: 20px;
+.body {
+  height: -o-calc(100% - 65px);
+  /* opera */
+  /* google, safari */
+  height: -moz-calc(100% - 65px);
+  /* firefox */
+  background-color: #fafafa;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
-section {
-    background-color: hsla(0, 0%, 56%, 0.5);
-    height: auto;
-    width: 100%;
-    margin-bottom: 10px;
+.footer {
+  margin-top: 10px;
+  padding: 20px;
+  letter-spacing: 5px;
 }
 
-/* ------------ BS Overide specifications -personalization ------------- */
+.footer i {
+  letter-spacing: 20px;
+  justify-self: center;
+}
+
+.prelative {
+  position: relative;
+}
+
+.section-padding {
+  padding: 80px 0px;
+}
+
+.section-content {
+  margin-top: 80px;
+}
+
+.sectioner-header {
+  width: 69%;
+  margin: 0 auto;
+}
+
+.sectioner-header p {
+  font-size: 17px;
+}
+
+.media-right-margin {
+  margin-right: 25px;
+}
+
+/*---- Headers Underline Start ----*/
+.line {
+  height: 2px;
+  width: 50px;
+  background: rgb(187, 191, 202);
+  display: block;
+  margin: 20px auto 20px;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  height: 2px;
+  border-bottom: 2px dashed #BBBFCA;
+  margin-left: -75px;
+}
+
+/*---- Headers Underline End ----*/
+/* ------------ Index Start ------------- */
+/*---- Navbar Start----*/
 .navbar {
-    background-color: #394867 !important;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.049803922);
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 50px;
+  line-height: 50px;
+  background: transparent;
+  z-index: 1030;
 }
 
-.navbar-brand-img {
-    width: 7rem
+.navbar .nav-item {
+  margin: 0 5px;
+  padding: 0;
 }
 
-a.nav-link {
-    width: 8rem;
-    justify-content: space-evenly;
-    font-size: ;
-    color: #fff;
-    font-size: 20px;
-    transition: all 100ms ease-in-out;
+.navbar .nav-item a {
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
 }
 
-/* ------------ Index ------------- */
-
-/* ------------ Main Background ------------- */
-#background-video {
-    height: calc(100vh - 80px);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 70%;
+.navbar .nav-item a:hover {
+  color: rgb(73, 84, 100);
 }
 
+.navbar .nav-link {
+  position: relative;
+  padding: 0;
+}
+
+.navbar .navbar-toggler {
+  cursor: pointer;
+}
+
+.navbar .navbar-toggler span {
+  color: white;
+}
+
+.navbar-style2 .active:after,
+.navbar-style2 .nav-link:after {
+  display: none;
+}
+
+.logo-1 {
+  height: 50px;
+}
+
+/*---- Navbar End ----*/
+/*---- Banner Start ----*/
+.banner {
+  background: rgb(187, 191, 202);
+  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+  padding: 100px 0px;
+  position: relative;
+}
+.banner .banner-content .banner-title {
+  color: white;
+  padding: 10px;
+}
+.banner .banner-content .banner-text {
+  font-size: 20px;
+  padding-right: 80px;
+  margin: 50px 0px 0px;
+  margin: 40px 0px;
+  margin: 25px 0px;
+}
+.banner .banner-content a {
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+.banner-img {
+  height: 350px;
+  border-radius: 20px;
+}
+
+.svg-wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/*---- Banner End ----*/
+/*---- Travel Tips Background End----*/
+.video-overlay {
+  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+}
+
+/*---- Travel Tips Background End ----*/
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-
-    #background-video {
-        height: 100vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        object-fit: cover;
-        position: fixed;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        opacity: 70%;
-    }
-
-}
-
-
-/* ------------ Main Call Out ------------- */
-.call--img {
-    grid-area: img;
-}
-
-.call--title {
-    grid-area: title;
-}
-
-.call--par {
-    grid-area: par;
-}
-
-.call--button {
-    grid-area: button;
-}
-
-.call {
-    display: grid;
-    margin: 0 auto;
-    width: 80%;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "img title title"
-        "img par par"
-        "img  ......  button";
-    overflow: scroll;
+  .banner-content {
+    padding-right: 0px;
     padding-bottom: 20px;
+    margin: 10px 0px 0px;
+  }
+  .banner-content .banner-img {
+    height: 250px;
+  }
 }
-
-.call h1 {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    color: #212A3E;
-
-}
-
-#call-image {
-    display: flex;
-    justify-self: center;
-    height: 400px;
-}
-
-.call p {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    color: #33415c;
-    text-overflow: scroll;
-}
-
-.call a {
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    align-self: center;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    background-color: hsl(220, 29%, 31%);
-    opacity: 0.8;
-    color: #fff;
+/*------ Media Query Start -------*/
+@media all and (max-width: 992px) {
+  .navbar .navbar-collapse {
+    overflow: auto;
+    background: rgba(187, 191, 202, 0.7);
+    color: white !important;
     text-align: center;
-    text-decoration: none;
-    border-radius: 2rem;
-}
-
-.call a:hover {
-    opacity: 1;
-}
-
-/* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
-    .call {
-        display: block;
-        position: relative;
-        text-align: center;
-        background-color: hsla(0, 0%, 49%, 0.5);
-        margin-bottom: 20px;
-    }
-
-    #call-image {
-        visibility: hidden;
-    }
-
-    .call h1 {
-        position: absolute;
-        top: 20px;
-        left: 19px;
-    }
-
-    .call p {
-        position: absolute;
-        top: 90px;
-        text-overflow: scroll;
-        font-size: 17px;
-        text-align: left;
-        padding-left: 10px;
-    }
-
-    .call a {
-        position: absolute;
-        bottom: 3%;
-        left: 20px;
-    }
-}
-
-/* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
-
-
-/* ------------ Personalized Sections ------------- */
-
-/* ------------ ABOUT ME SECTION 1 CSS LEFT REUSE FORM PAGES------------- */
-#sec1 a {
-    text-decoration: none;
-    color: #f5f5dc;
-}
-
-#sec1-button a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #4f648d;
-}
-
-.about-section1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 10px 0;
+  }
+  #contact_form {
     margin-bottom: 20px;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
+  }
 }
-
+@media all and (max-width: 768px) {
+  .banner-content {
+    padding-right: 0px;
+    padding-bottom: 20px;
+    margin: 10px 0px 0px;
+  }
+  #contact_form {
+    margin-bottom: 20px;
+  }
+  .contact-item {
+    font-size: 12px;
+  }
+}
+/*------ Media Query End -------*/
+/* ------------ Index End ------------- */
+/* ------------ Personalized Sections ------------- */
+/* ------------ ABOUT ME SECTION 1 CSS LEFT REUSE FORM PAGES------------- */
+.about-section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+}
+.about-section1 .about-content img, .about-section1 h1, .about-section1 h2, .about-section1 p {
+  padding-bottom: 10px;
+}
+.about-section1 .about-content h1 {
+  color: rgb(33, 53, 85);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgb(205, 159, 250);
+}
+.about-section1 .about-section h3 {
+  font-size: 2em;
+}
+.about-section1 .about-content h2 a {
+  text-shadow: 2px 2px rgba(79, 112, 156, 0.7);
+  transition: all 0.33s ease-out;
+}
+.about-section1 .about-content h2 a:hover {
+  transform: scale(1.1);
+}
+.about-section1 .about-text {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-    .about-section1--img {
-        width: 350px;
-    }
-
-    .sec1-text {
-        width: 350px;
-    }
+  .about-section1--img {
+    width: 340px;
+  }
+  .about-text {
+    width: 340px;
+  }
 }
-
 /* ------------ TRAVEL TIPS SECTION 2------------- */
-
-
 #sec2-travel-vid-tip1 {
-    height: 400PX;
-    grid-area: vid1;
+  height: 400px;
+  grid-area: vid1;
 }
 
 #sec2-travel-title-tip1 {
-    grid-area: title1;
+  grid-area: title1;
 }
 
 #sec2-travel-text-tip1 {
-    grid-area: text1;
+  grid-area: text1;
 }
 
 #sec2-travel-vid-tip2 {
-    height: 400PX;
-    grid-area: vid2;
+  height: 400px;
+  grid-area: vid2;
 }
 
 #sec2-travel-title-tip2 {
-    grid-area: title2;
+  grid-area: title2;
 }
 
 #sec2-travel-text-tip2 {
-    grid-area: text2;
+  grid-area: text2;
 }
 
 #sec2-travel-vid-tip3 {
-    height: 400PX;
-    grid-area: vid3;
+  height: 400px;
+  grid-area: vid3;
 }
 
 #sec2-travel-title-tip3 {
-    grid-area: title3;
+  grid-area: title3;
 }
 
 #sec2-travel-text-tip3 {
-    grid-area: text3;
+  grid-area: text3;
 }
-
 
 .sec2-travel-video {
-    display: grid;
-    margin: 0 auto;
-    width: 80%;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "vid1 vid2 vid3"
-        "title1 title2 title3"
-        "text1 text2 text3";
+  display: grid;
+  margin: 0 auto;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "vid1 vid2 vid3" "title1 title2 title3" "text1 text2 text3";
 }
-
 
 .sec2-travel-video a {
-    cursor: pointer;
-    text-decoration: none;
-    color: #f1f1f1;
-    justify-self: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  justify-self: center;
 }
-
 
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
-
-    #sec2-travel-text-tip1 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-vid-tip2 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-title-tip2 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-text-tip2 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-vid-tip3 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-title-tip3 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-text-tip3 {
-        visibility: hidden;
-    }
-
-    .sec2-travel-video {
-        display: block;
-        position: relative;
-        text-align: center;
-        height: 420px;
-    }
-
-    #sec2-travel-vid-tip1 {
-        position: absolute;
-        top: 10px;
-        left: 50px;
-    }
-
-    #sec2-travel-title-tip1 {
-        position: absolute;
-        top: 20px;
-        left: 70px;
-        font-weight: bold;
-    }
-
-}
-
-
-
-/* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
-
+@media (min-width: 360px) and (max-width: 773px) {
+  #sec2-travel-vid-tip3 {
+    visibility: hidden;
+  }
+  #sec2-travel-vid-tip2 {
+    visibility: hidden;
+  }
+  .sec2-travel-video {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas: "vid1" "title1" "text1";
+    height: 665px;
+  }
+}
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
+@media (min-width: 774px) and (max-width: 938px) {
+  #sec2-travel-vid-tip3 {
+    visibility: hidden;
+  }
+  .sec2-travel-video {
+    width: 100vh;
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "vid1 vid2" "title1 title2" "text1 text2";
+    height: 665px;
+  }
+}
+/* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {}
-
 /* Media Query for Large screens */
-@media (min-width: 1281px) {}
-
-
-
 /* ------------ GALLERY SECTION 3------------- */
-
-/* ------------ BS Carrousel Media Queries ------------- */
-
+/* ----- BS Carrousel Media Queries ----- */
 .d-flex {
-    height: 53rem;
+  height: 53rem;
 }
 
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-    .d-flex {
-        height: 12rem;
-    }
+  .d-flex {
+    height: 12rem;
+  }
 }
-
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
-    .d-flex {
-        height: 22rem;
-    }
+  .d-flex {
+    height: 22rem;
+  }
 }
-
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .d-flex {
-        height: 27rem;
-    }
+  .d-flex {
+    height: 27rem;
+  }
 }
-
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .d-flex {
-        height: 32rem;
-    }
+  .d-flex {
+    height: 32rem;
+  }
 }
-
 /* Media Query for Large screens */
 @media (min-width: 1281px) {
-    .d-flex {
-        height: 37rem;
-    }
+  .d-flex {
+    height: 37rem;
+  }
 }
-
-
-#sec3 a {
-    text-decoration: none;
-    color: #f5f5dc;
-}
-
 /* ------------ CONTACT ME SECTION 4 CSS FOR INDEX REUSED FROM THE PAGES CSS------------- */
-
-#sec4 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.sec4-contact a {
-    height: 100px;
-    text-decoration: none;
-    color: #fff;
-}
-
-
-/* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
-/* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {}
-
-/* Media Query for Large screens */
-@media (min-width: 1281px) {}
-
-
 /* ------------ PAGES CSS ------------- */
-
 /* -------------CONTACT ME REUSE FOR INDEX VIEW------------- */
-
 /*Body*/
+.contact {
+  background: rgb(187, 191, 202);
+  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+  padding: 100px 0px;
+  position: relative;
+}
+
+.contact-item {
+  margin: 23px 0px;
+}
+
+.contact-item i {
+  font-size: 20px;
+}
+
+.contact-item p {
+  line-height: 20px;
+  margin: 0;
+}
+
 .contactB {
-
-    background-image: url(../Media/fade.JPG);
-    background-position: 0;
-    background-size: auto;
-
+  background-image: url(../Media/fade.webp);
+  background-size: cover;
 }
 
-.box-main {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    color: #fff;
-    margin: auto;
-    height: 80%;
-    font-weight: bold;
+#contact_form {
+  margin-bottom: 20px;
 }
 
-.text-big {
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
+.contact-item {
+  font-size: 12px;
 }
 
-.h-primary {
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px;
+#contact_form .form-input {
+  border: 1px solid #e4e4e4;
 }
 
-.form-label {
-    color: #fff;
-    font-weight: bold;
+input {
+  height: 42px;
+  padding: 0 1rem;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  border: 0;
 }
 
-section .container .py-4 {
-    height: 100vh !important;
+#contact_form textarea {
+  resize: none;
+  padding: 1rem;
+  height: 150px;
+  background: white;
+  border: 0;
+  border-radius: 30px;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
+.btn-grad {
+  transform: translate(0%, 0%);
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  color: white;
+  border-radius: 2rem;
+  border: 0;
+  background: linear-gradient(to left, rgb(122, 96, 255), rgb(205, 159, 250));
+  cursor: pointer;
+}
+
+.wrapper button span {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper button:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(to left, rgb(40, 60, 134), rgb(69, 162, 71));
+  transition: all 0.35s;
+}
+
+.wrapper button:hover {
+  color: rgb(33, 53, 85);
+}
+
+.wrapper button:active:after {
+  width: 100%;
+}
+
+.contact-info {
+  padding: 2rem 2rem 1rem;
+  border-radius: 8px;
+  background: rgb(122, 96, 255);
+  background: linear-gradient(to left, rgb(122, 96, 255), rgb(205, 159, 250));
+}
+
+.contact-item {
+  margin: 23px 0px;
+}
+
+.contact-item i {
+  font-size: 20px;
+}
+
+.contact-item p {
+  line-height: 20px;
+  margin: 0;
+}
+
+/*------ Animation start------*/
+/*------ Animation End------*/
 /* -------------TRAVEL BLOG------------- */
-
-.travelbody {
-    height: -o-calc(100% - 65px);
-    /* opera */
-    height: -webkit-calc(100% - 65px);
-    /* google, safari */
-    height: -moz-calc(100% - 65px);
-    /* firefox */
-    padding: 20px;
-    background: #f1f1f1;
-}
-
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
-    margin-left: 40px;
-    float: left;
-    width: 70%;
+  margin-left: 40px;
+  float: left;
+  width: 70%;
 }
 
 /* Right column */
 .rightcolumn {
-    float: left;
-    width: 20%;
-    padding-left: 20px;
+  float: left;
+  width: 20%;
+  padding-left: 20px;
 }
 
 /* Fake image */
 .fakeimg {
-    background-color: #aaa;
-    width: 80%;
-    padding: 20px;
+  background-color: #aaa;
+  width: 80%;
+  padding: 20px;
 }
 
 .fakeimg1 {
-    background-color: transparent;
-    width: 80%;
-    padding: 20px;
-    text-align: center;
+  background-color: transparent;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
 
 .fakeimg1 img {
-    height: 100px;
-
+  height: 100px;
 }
 
 /* card effect for articles */
 .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .card h2 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
 }
-
 /* -------------ABOUT ME------------- */
-
-.aboutbody {
-    margin: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: -o-calc(100vh - 75px);
-    /* opera */
-    height: -webkit-calc(100vh - 75px);
-    /* google, safari */
-    height: -moz-calc(100vh - 75px);
-    /* firefox */
-}
-
 .about-section {
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-    background-size: cover;
-    /* Add this line */
-    background-position: center center;
-    /* Add this line */
-    background-repeat: no-repeat;
-    /* Add this line */
-    background-attachment: fixed;
-    /* Add this line */
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #hero .profile-img {
-    width: 300px;
-    border-radius: 50%;
+  width: 300px;
+  border-radius: 50%;
 }
 
 #hero h1 {
-    font-size: 3em;
-}
-
-.about-section h3 {
-    font-size: 2em;
+  font-size: 3em;
 }
 
 .results {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 .section-inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .about-contact a {
-    margin: 40px;
-    text-decoration: none;
-    color: #212A3E;
+  margin: 40px;
+  text-decoration: none;
+  color: #212A3E;
 }
 
 .section-inner2 {
-    align-items: center;
-    margin-bottom: 40px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .about-data {
-    font-size: 30px;
-    color: #347f38;
-    font-weight: 700;
+  font-size: 30px;
+  color: #347f38;
+  font-weight: 700;
 }
 
 .about-label {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .about-contact a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #hero {
-
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.JPG');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
 }
 
 #about {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.JPG');
-
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('./Media/contactH.JPG');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
 }
 
 #about {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('./Media/contactH.JPG');
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
 }
-
-
 
 /* -------------GALLERY------------- */
-
 .galeria {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 200px);
-    padding: 20px;
-    grid-gap: 15px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 200px);
+  padding: 20px;
+  grid-gap: 15px;
 }
 
 .item {
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #000;
-    transition: all 0.9s;
-    filter: grayscale(100%);
-    box-shadow: 0 0 5px 0px #000;
+  background-size: cover;
+  background-position: center;
+  border: 4px solid #000;
+  transition: all 0.9s;
+  filter: grayscale(100%);
+  box-shadow: 0 0 5px 0px #000;
 }
 
 .item:hover {
-    filter: grayscale(0%);
-    transform: scale(1.2);
+  filter: grayscale(0%);
+  transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .item1 {
-    background-image: url(../Media/zen.png);
+  background-image: url(../Media/zen.webp);
 }
 
 .item2 {
-    background-image: url(../Media/People.JPG);
+  background-image: url(../Media/People.webp);
 }
 
 .item3 {
-    background-image: url(../Media/Water.png);
+  background-image: url(../Media/Water.webp);
 }
 
 .item4 {
-    background-image: url(../Media/fade.JPG);
+  background-image: url(../Media/fade.webp);
 }
 
 .item5 {
-    background-image: url(../Media/graffiti.jpeg);
+  background-image: url(../Media/graffiti.webp);
 }
 
 .item6 {
-    background-image: url(../Media/Rest.jpeg);
+  background-image: url(../Media/Rest.webp);
 }
 
 .item7 {
-    background-image: url(../Media/monument.png);
+  background-image: url(../Media/monument.webp);
 }
 
 .item8 {
-    background-image: url(../Media/Deck.png);
+  background-image: url(../Media/Deck.webp);
 }
 
 .item9 {
-    background-image: url(../Media/MedellínCent.png);
+  background-image: url(../Media/MedellínCent.webp);
 }
 
 .item10 {
-    background-image: url(../Media/MedMuseam.png);
+  background-image: url(../Media/MedMuseam.webp);
 }
 
 .item11 {
-    background-image: url(../Media/Flower.JPG);
-    
+  background-image: url(../Media/Flower.webp);
 }
 
 .item12 {
-    background-image: url(../Media/Poet.jpeg);
+  background-image: url(../Media/Poet.webp);
 }
 
 .item13 {
-    background-image: url(../Media/contactH.JPG);
+  background-image: url(../Media/contactH.webp);
 }
 
 .item14 {
-    background-image: url(../Media/Centro.png);
+  background-image: url(../Media/Centro.webp);
 }
 
 .item15 {
-    background-image: url(../Media/Bill.jpg);
+  background-image: url(../Media/Bill.webp);
 }
 
 .item16 {
-    background-image: url(../Media/Monserrat.JPG);
+  background-image: url(../Media/Monserrat.webp);
+  background-position: left;
 }
 
 .item17 {
-    background-image: url(../Media/Bird.png);
-    background-position: left;
+  background-image: url(../Media/Bird.webp);
+  background-position: left;
 }
+
 .item18 {
-    background-image: url(../Media/Ishira.png);
-}
-.body {
-    height: -o-calc(100% - 65px);
-    /* opera */
-    height: -webkit-calc(100% - 65px);
-    /* google, safari */
-    height: -moz-calc(100% - 65px);
-    /* firefox */
-    background-color: #fafafa;
+  background-image: url(../Media/Ishira.webp);
 }
 
 .container {
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 0 2rem 2rem;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    /* Compensate for excess margin on outer gallery flex items */
-    margin: -1rem -1rem;
-}
-
-.gallery-item {
-    /* Minimum width of 24rem and grow to fit available space */
-    flex: 1 0 24rem;
-    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-    margin: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-}
-
-.gallery-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms ease-OUT;
-}
-
-.gallery-image:hover {
-    transform: scale(1.1);
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
 }
 
 /* inician las media queries */
-
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
-    .galeria {
-        /* grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 200px); */
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(18, 200px);
-    }
-
-    .nosotros {
-        display: flex;
-    }
-
-    .nleft {
-        width: 50%;
-    }
-
-    .nright {
-        width: 50%;
-    }
-
-    .item2 {
-        background-size: contain;
-    }
+  .galeria {
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, $lg1); */
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(18, 200px);
+  }
+  .nosotros {
+    display: flex;
+  }
+  .nleft {
+    width: 50%;
+  }
+  .nright {
+    width: 50%;
+  }
+  .item2 {
+    background-size: contain;
+  }
 }
-
-
-@media only screen and (min-width:1024px) {
-    .galeria {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(21, 7rem );
-    }
-
-    /* First COlumn */
-    .item1 {
-        /* Piedras */
-        grid-column: 1/2;
-        grid-row: 1/7;
-    }
-
-    .item5 {
-        /* Graffiti */
-        grid-column: 1/2;
-        grid-row: 7/9;
-    }
-    .item7 {
-        /* Monument */
-        grid-column: 1/2;
-        grid-row: 9/12;
-    }
-
-    .item9 {
-        /* Medellin center */
-        grid-column: 1/2;
-        grid-row: 12/16;
-    }
-
-    .item17 {
-        /* Bird */
-        grid-column: 1/2;
-        grid-row: 16/20;
-    }
-
-    .item16 {
-        /* Monserrat */
-        grid-column: 1/2;
-        grid-row: 20/24;
-    }
-    .item4 {
-        /* Fade */
-        grid-column: 1/2;
-        grid-row: 24/44;
-    }
-
-    /* Second Column */
-
-    .item2 {
-        /* People */
-        grid-column: 2/3;
-        grid-row: 1/7;
-    }
-    .item12 {
-        /* Poet */
-        grid-column: 2/3;
-        grid-row: 7/14;
-    }
-    .item18 {
-        /* Ishira */
-        grid-column: 2/3;
-        grid-row: 14/21;
-    }
-    .item14 {
-        /* Bogotá Center */
-        grid-column: 2/3;
-        grid-row: 21/44;
-    }
-
-
-    /*------- Third Column -------*/
-    .item3 {
-        /* Water */
-        grid-column: 3/4;
-        grid-row: 1/7;
-    }
-
-    .item6 {
-        /* Restaurant */
-        grid-column: 3/4;
-        grid-row: 7/9;
-    }
-
-    .item8 {
-        /* Deck */
-        grid-column: 3/4;
-        grid-row: 9/12;
-    }
-
-    .item10 {
-        /* Museum */
-        grid-column: 3/4;
-        grid-row: 12/16;
-    }
-
-    .item13 {
-        /* Blue Pond */
-        grid-column: 3/4;
-        grid-row: 16/20;
-    }
-
-    .item15 {
-        /* Bill */
-        grid-column: 3/4;
-        grid-row: 20/24;
-    }
-    .item11 {
-        /* Flower */
-        grid-column: 3/4;
-        grid-row: 24/44;
-
-    }
-
-
-}
-
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 200px);
-    }
-}
-
-/* ------------ FOOTER ------------*/
-footer {
-    position: static;
-    bottom: 0;
-    width: 100%;
-    height: 7rem;
-    background-color: #394867;
-    color: #f5f5dc;
-    font-size: 15px;
-    padding: 15px;
-    margin-top: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 10px;
-}
-
-.redes a {
-    font-size: 30px;
-    color: #f5f5dc;
-}
-
-.redes i {
-    letter-spacing: 25px;
-
-}
-
-/* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
-
+@media (min-width: 481px) and (max-width: 767px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 200px);
+  }
+}
 /* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 200px);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(21, 7rem);
+  }
+  /* First COlumn */
+  .item1 {
+    /* Piedras */
+    grid-column: 1/2;
+    grid-row: 1/7;
+  }
+  .item5 {
+    /* Graffiti */
+    grid-column: 1/2;
+    grid-row: 7/9;
+  }
+  .item7 {
+    /* Monument */
+    grid-column: 1/2;
+    grid-row: 9/12;
+  }
+  .item9 {
+    /* Medellin center */
+    grid-column: 1/2;
+    grid-row: 12/16;
+  }
+  .item17 {
+    /* Bird */
+    grid-column: 1/2;
+    grid-row: 16/20;
+  }
+  .item16 {
+    /* Monserrat */
+    grid-column: 1/2;
+    grid-row: 20/24;
+  }
+  .item4 {
+    /* Fade */
+    grid-column: 1/2;
+    grid-row: 24/44;
+  }
+  /* Second Column */
+  .item2 {
+    /* People */
+    grid-column: 2/3;
+    grid-row: 1/7;
+  }
+  .item12 {
+    /* Poet */
+    grid-column: 2/3;
+    grid-row: 7/14;
+  }
+  .item18 {
+    /* Ishira */
+    grid-column: 2/3;
+    grid-row: 14/21;
+  }
+  .item14 {
+    /* Bogotá Center */
+    grid-column: 2/3;
+    grid-row: 21/44;
+  }
+  /*------- Third Column -------*/
+  .item3 {
+    /* Water */
+    grid-column: 3/4;
+    grid-row: 1/7;
+  }
+  .item6 {
+    /* Restaurant */
+    grid-column: 3/4;
+    grid-row: 7/9;
+  }
+  .item8 {
+    /* Deck */
+    grid-column: 3/4;
+    grid-row: 9/12;
+  }
+  .item10 {
+    /* Museum */
+    grid-column: 3/4;
+    grid-row: 12/16;
+  }
+  .item13 {
+    /* Blue Pond */
+    grid-column: 3/4;
+    grid-row: 16/20;
+  }
+  .item15 {
+    /* Bill */
+    grid-column: 3/4;
+    grid-row: 20/24;
+  }
+  .item11 {
+    /* Flower */
+    grid-column: 3/4;
+    grid-row: 24/44;
+  }
+}
+/* ------------To be Set Up Later On If Needed------------- */
 /* Media Query for Laptops and Desktops */
-@media (min-width: 1025px) and (max-width: 1280px) {}
-
 /* Media Query for Large screens */
-@media (min-width: 1281px) {}
-
 /* ------------ BACKUP BUTTON ------------*/
 .up {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    background-color: #394867;
-    color: #fff;
-    position: fixed;
-    right: 40px;
-    bottom: 40px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 30px;
-    box-shadow: 0 0 5px #fff;
-    transition: all 200ms ease-in-out;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background-color: #495464;
+  color: white;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  box-shadow: 0 0 5px white;
+  transition: all 200ms ease-in-out;
 }
 
 .up:hover {
-    color: #352F44;
-}
+  color: #352F44;
+}/*# sourceMappingURL=styles.css.map */
