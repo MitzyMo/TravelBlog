@@ -62,7 +62,7 @@ h3 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 h3 {
@@ -207,30 +207,29 @@ a {
     background: linear-gradient(to left, $color1 35%, $color2 46%);
     padding: $md3 0px;
     position: relative;
-}
-
-.banner-title {
-    color: $color5;
-    padding: $xs2;
-}
-
-.banner-text {
-    padding-right: $md1;
-    margin: $sm1 0px 0px;
-    margin: $xs4 0px;
-}
-
-.banner-text p {
-    margin: 25px 0px;
-    padding-bottom: $xs2;
-}
-
-.banner-content a {
-    font-size: $xs2;
-    color: $color5;
+    .banner-content {
+        .banner-title {
+            color: $color5;
+            padding: $xs1;
+        }
+        
+        .banner-text {
+            font-size: $xs2;
+            padding-right: $md1;
+            margin: $sm1 0px 0px;
+            margin: $xs4 0px;
+            margin: 25px 0px;
+        }
+        a {
+            font-size: $xs2;
+            color: $color5;
+            text-shadow: 2px 2px $color6;
+        }
+    }
 }
 
 .banner-img {
+    height: 350px;
     border-radius: $xs2;
 }
 
@@ -249,6 +248,17 @@ a {
 
 /*---- Travel Tips Background End ----*/
 
+/* Media Query for Mobile Devices */
+@media (min-width: 360px) and (max-width: 480px) {
+    .banner-content {
+        padding-right: 0px;
+        padding-bottom: $xs2;
+        margin: $xs1 0px 0px;
+        .banner-img{
+            height: 250px;
+        }
+    }
+}
 
 /*------ Media Query Start -------*/
 @media all and (max-width:992px) {
@@ -299,23 +309,48 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: $color6;
+    .about-content img, h1, h2, p{
+        padding-bottom: $xs1;
+    }
+
+    .about-content h1{
+        color: $color1;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-thickness: 2px;
+        text-decoration-color: $color3;
+    }
+    .about-section h3 {
+        font-size: 2em;
+    }
+    .about-content h2 a{
+        text-shadow: 2px 2px rgb(79, 112, 156, 0.7);
+        transition: all 0.33s ease-out;
+    }
+    .about-content h2 a:hover{
+        transform: scale(1.1);
+    }
+    .about-text {
+        width: 80%;
+margin: 0 auto;
+    }
 }
 
 /* Media Query for Mobile Devices */
 @media (min-width: 360px) and (max-width: 480px) {
     .about-section1--img {
-        width: 3$sm1;
+        width: 340px;
     }
 
     .about-text {
-        width: 3$sm1;
+        width: 340px;
     }
 }
 
 /* ------------ TRAVEL TIPS SECTION 2------------- */
 
 #sec2-travel-vid-tip1 {
-    height: 400PX;
+    height: 400px;
     grid-area: vid1;
 }
 
@@ -328,7 +363,7 @@ a {
 }
 
 #sec2-travel-vid-tip2 {
-    height: 400PX;
+    height: 400px;
     grid-area: vid2;
 }
 
@@ -341,7 +376,7 @@ a {
 }
 
 #sec2-travel-vid-tip3 {
-    height: 400PX;
+    height: 400px;
     grid-area: vid3;
 }
 
@@ -357,7 +392,6 @@ a {
 .sec2-travel-video {
     display: grid;
     margin: 0 auto;
-    width: 80%;
     grid-gap: $xs1;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
@@ -374,67 +408,50 @@ a {
     justify-self: center;
 }
 
-
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
-
-    #sec2-travel-text-tip1 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-vid-tip2 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-title-tip2 {
-        visibility: hidden;
-    }
-
-    #sec2-travel-text-tip2 {
-        visibility: hidden;
-    }
-
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 360px) and (max-width: 773px) {
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
-
-    #sec2-travel-title-tip3 {
+    #sec2-travel-vid-tip2 {
         visibility: hidden;
     }
-
-    #sec2-travel-text-tip3 {
-        visibility: hidden;
-    }
-
     .sec2-travel-video {
-        display: block;
-        position: relative;
-        text-align: center;
-        height: 4$xs2;
-    }
+        display: grid;
+        margin: 0 auto;
+        grid-gap: $xs1;
+        grid-template-columns: 100%;
+        grid-template-areas:
+    "vid1" 
+    "title1" 
+    "text1";
+        height: 665px;
+    
+}
+}
 
-    #sec2-travel-vid-tip1 {
-        position: absolute;
-        top: $xs1;
-        left: $sm1;
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 774px) and (max-width: 938px) {
+    #sec2-travel-vid-tip3 {
+        visibility: hidden;
     }
-
-    #sec2-travel-title-tip1 {
-        position: absolute;
-        top: $xs2;
-        left: $sm3;
-        font-weight: bold;
-    }
-
+    .sec2-travel-video {
+        width: 100vh;
+        display: grid;
+        margin: 0 auto;
+        grid-gap: $xs1;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+    "vid1 vid2" 
+    "title1 title2" 
+    "text1 text2";
+        height: 665px;
+    
+}
 }
 
 /* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
-
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
-
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {}
 
@@ -701,10 +718,6 @@ input {
     font-size: 3em;
 }
 
-.about-section h3 {
-    font-size: 2em;
-}
-
 .results {
     display: flex;
     flex-direction: column;
@@ -785,7 +798,7 @@ input {
 
 .item:hover {
     filter: grayscale(0%);
-    transform: scale(1.2);
+    transform: scale3d(1.1, 1.1, 1.1);
 }
 
 .item1 {
@@ -851,6 +864,7 @@ input {
 
 .item16 {
     background-image: url(../Media/Monserrat.JPG);
+    background-position: left;
 }
 
 .item17 {
@@ -866,31 +880,6 @@ input {
     max-width: 100rem;
     margin: 0 auto;
     padding: 0 2rem 2rem;
-}
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -1rem -1rem;
-}
-
-.gallery-item {
-    flex: 1 0 24rem;
-    margin: 1rem;
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-}
-
-.gallery-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 400ms ease-OUT;
-}
-
-.gallery-image:hover {
-    transform: scale(1.1);
 }
 
 /* inician las media queries */
@@ -918,6 +907,20 @@ input {
 
     .item2 {
         background-size: contain;
+    }
+}
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, $lg1);
+    }
+}
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, $lg1);
     }
 }
 
@@ -1045,20 +1048,9 @@ input {
 
 }
 
-@media only screen and (min-width:768px) and (max-width:1023px) {
-    .galeria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(9, $lg1);
-    }
-}
-
 
 /* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {}
 
-/* Media Query for Tablets Ipads portrait mode */
-@media (min-width: 768px) and (max-width: 1024px) {}
 
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px) {}
