@@ -449,7 +449,7 @@ a {
 }
 
 .contactB {
-  background-image: url(../Media/fade.JPG);
+  background-image: url(../Media/fade.webp);
   background-size: cover;
 }
 
@@ -669,16 +669,16 @@ input {
 }
 
 #hero {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.JPG");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
 }
 
 #about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.JPG");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Media/contactH.JPG");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Media/contactH.webp");
 }
 
 #about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Media/contactH.JPG");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("./Media/contactH.webp");
 }
 
 /* -------------GALLERY------------- */
@@ -707,77 +707,77 @@ input {
 }
 
 .item1 {
-  background-image: url(../Media/zen.png);
+  background-image: url(../Media/zen.webp);
 }
 
 .item2 {
-  background-image: url(../Media/People.JPG);
+  background-image: url(../Media/People.webp);
 }
 
 .item3 {
-  background-image: url(../Media/Water.png);
+  background-image: url(../Media/Water.webp);
 }
 
 .item4 {
-  background-image: url(../Media/fade.JPG);
+  background-image: url(../Media/fade.webp);
 }
 
 .item5 {
-  background-image: url(../Media/graffiti.jpeg);
+  background-image: url(../Media/graffiti.webp);
 }
 
 .item6 {
-  background-image: url(../Media/Rest.jpeg);
+  background-image: url(../Media/Rest.webp);
 }
 
 .item7 {
-  background-image: url(../Media/monument.png);
+  background-image: url(../Media/monument.webp);
 }
 
 .item8 {
-  background-image: url(../Media/Deck.png);
+  background-image: url(../Media/Deck.webp);
 }
 
 .item9 {
-  background-image: url(../Media/MedellínCent.png);
+  background-image: url(../Media/MedellínCent.webp);
 }
 
 .item10 {
-  background-image: url(../Media/MedMuseam.png);
+  background-image: url(../Media/MedMuseam.webp);
 }
 
 .item11 {
-  background-image: url(../Media/Flower.JPG);
+  background-image: url(../Media/Flower.webp);
 }
 
 .item12 {
-  background-image: url(../Media/Poet.jpeg);
+  background-image: url(../Media/Poet.webp);
 }
 
 .item13 {
-  background-image: url(../Media/contactH.JPG);
+  background-image: url(../Media/contactH.webp);
 }
 
 .item14 {
-  background-image: url(../Media/Centro.png);
+  background-image: url(../Media/Centro.webp);
 }
 
 .item15 {
-  background-image: url(../Media/Bill.jpg);
+  background-image: url(../Media/Bill.webp);
 }
 
 .item16 {
-  background-image: url(../Media/Monserrat.JPG);
+  background-image: url(../Media/Monserrat.webp);
   background-position: left;
 }
 
 .item17 {
-  background-image: url(../Media/Bird.png);
+  background-image: url(../Media/Bird.webp);
   background-position: left;
 }
 
 .item18 {
-  background-image: url(../Media/Ishira.png);
+  background-image: url(../Media/Ishira.webp);
 }
 
 .container {
