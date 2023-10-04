@@ -6,8 +6,8 @@ $font1: "museo-slab";
 $font2: "museo-slab-rounded";
 $font3: "sans-serif";
 $font3: "sans";
-$color1: rgb(33, 53, 85, 1);
-$color2: rgb(79, 112, 156, 1);
+$color1: rgb(79, 112, 156, 1);
+$color2: rgb(33, 53, 85, 1);
 $color3: rgb(205, 159, 250);
 $color4: rgb(187, 191, 202);
 $color4s: rgb(187, 191, 202, 0.7);
@@ -39,7 +39,6 @@ $lg3: 400px;
     box-sizing: border-box;
     /*Respetar los padding adicionales*/
     font-family: $font1, $font3;
-    font-weight: lighter;
 }
 
 /* ------------Smooth Scrolling------------- */
@@ -62,11 +61,15 @@ h3 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: $xs3;
 }
 
 h3 {
     font-size: 23px;
+}
+
+p {
+    font-size: $xs2;
 }
 
 a {
@@ -105,7 +108,7 @@ a {
 }
 
 .section-padding {
-    padding: $md1 0px;
+    padding: $sm1 0px;
 }
 
 .section-content {
@@ -170,12 +173,12 @@ a {
 .navbar .nav-item a {
     color: $color6;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 13px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 
 .navbar .nav-item a:hover {
-    color: $color7;
+    color: $color5;
 }
 
 .navbar .nav-link {
@@ -207,19 +210,22 @@ a {
     background: linear-gradient(to left, $color1 35%, $color2 46%);
     padding: $md3 0px;
     position: relative;
+
     .banner-content {
         .banner-title {
             color: $color5;
             padding: $xs1;
         }
-        
+
         .banner-text {
             font-size: $xs2;
             padding-right: $md1;
             margin: $sm1 0px 0px;
             margin: $xs4 0px;
             margin: 25px 0px;
+            color: $color5;
         }
+
         a {
             font-size: $xs2;
             color: $color5;
@@ -234,12 +240,20 @@ a {
 }
 
 .svg-wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    .svg-hero {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
 }
 
 /*---- Banner End ----*/
+
+#about {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
+}
 
 /*---- Travel Tips Background End----*/
 .video-overlay {
@@ -254,7 +268,8 @@ a {
         padding-right: 0px;
         padding-bottom: $xs2;
         margin: $xs1 0px 0px;
-        .banner-img{
+
+        .banner-img {
             height: 250px;
         }
     }
@@ -291,10 +306,6 @@ a {
     }
 }
 
-/*------ Media Query End -------*/
-/* ------------ Index End ------------- */
-
-/* ------------ Personalized Sections ------------- */
 
 /* ------------ ABOUT ME SECTION 1 CSS LEFT REUSE FORM PAGES------------- */
 
@@ -309,31 +320,40 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: $color6;
-    .about-content img, h1, h2, p{
+
+    .about-contact p{
+        width: 80%;
+    }
+    .about-content img,
+    h1,
+    h2,
+    p {
         padding-bottom: $xs1;
     }
 
-    .about-content h1{
+    .about-content h1 {
         color: $color1;
         text-decoration: underline;
         text-decoration-style: dotted;
         text-decoration-thickness: 2px;
         text-decoration-color: $color3;
     }
-    .about-section h3 {
-        font-size: 2em;
-    }
-    .about-content h2 a{
+
+    .about-content h2 a {
         text-shadow: 2px 2px rgb(79, 112, 156, 0.7);
         transition: all 0.33s ease-out;
     }
-    .about-content h2 a:hover{
+
+    .about-content h2 a:hover {
         transform: scale(1.1);
     }
+
     .about-text {
         width: 80%;
-margin: 0 auto;
+        margin: 0 auto;
     }
+
+
 }
 
 /* Media Query for Mobile Devices */
@@ -410,25 +430,27 @@ margin: 0 auto;
 
 /* Media Query for Mobile Devices */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 360px) and (max-width: 773px) {
+@media (min-width: 280px) and (max-width: 773px) {
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
+
     #sec2-travel-vid-tip2 {
         visibility: hidden;
     }
+
     .sec2-travel-video {
         display: grid;
         margin: 0 auto;
         grid-gap: $xs1;
         grid-template-columns: 100%;
         grid-template-areas:
-    "vid1" 
-    "title1" 
-    "text1";
+            "vid1"
+            "title1"
+            "text1";
         height: 665px;
-    
-}
+
+    }
 }
 
 /* Media Query for Tablets Ipads portrait mode */
@@ -436,6 +458,7 @@ margin: 0 auto;
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
+
     .sec2-travel-video {
         width: 100vh;
         display: grid;
@@ -443,12 +466,12 @@ margin: 0 auto;
         grid-gap: $xs1;
         grid-template-columns: 50% 50%;
         grid-template-areas:
-    "vid1 vid2" 
-    "title1 title2" 
-    "text1 text2";
+            "vid1 vid2"
+            "title1 title2"
+            "text1 text2";
         height: 665px;
-    
-}
+
+    }
 }
 
 /* ------------To be Set Up Later On If Needed------------- */
@@ -502,6 +525,8 @@ margin: 0 auto;
 }
 
 /* ------------ CONTACT ME SECTION 4 CSS FOR INDEX REUSED FROM THE PAGES CSS------------- */
+/* ------------ Index End ------------- */
+
 /* ------------ PAGES CSS ------------- */
 /* -------------CONTACT ME REUSE FOR INDEX VIEW------------- */
 /*Body*/
@@ -511,33 +536,30 @@ margin: 0 auto;
     background: linear-gradient(to left, $color1 35%, $color2 46%);
     padding: $md3 0px;
     position: relative;
-}
 
-.contact-item {
-    margin: 23px 0px;
-}
+    p{
+        color: $color5;
+    }
 
-.contact-item i {
-    font-size: $xs2;
-}
+    .contact-item {
+        margin: 23px 0px;
+        font-size: 16px;
+    }
 
-.contact-item p {
-    line-height: $xs2;
-    margin: 0;
-}
+    .contact-item i {
+        font-size: $xs2;
+    }
 
-.contactB {
-    background-image: url(../Media/fade.webp);
-    background-size: cover;
+    .contact-item p {
+        line-height: $xs2;
+        margin: 0;
+    }
 }
 
 #contact_form {
     margin-bottom: 20px;
 }
 
-.contact-item {
-    font-size: 12px;
-}
 
 #contact_form .form-input {
     border: 1px solid #e4e4e4;
@@ -569,6 +591,7 @@ input {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
 .btn-grad {
     transform: translate(0%, 0%);
     padding: .7rem 2rem;
@@ -617,11 +640,11 @@ input {
 }
 
 .contact-item i {
-    font-size: 20px;
+    font-size: $xs2;
 }
 
 .contact-item p {
-    line-height: 20px;
+    line-height: $xs2;
     margin: 0;
 }
 
@@ -631,40 +654,6 @@ input {
 /*------ Animation End------*/
 /* -------------TRAVEL BLOG------------- */
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-    margin-left: $xs4;
-    float: left;
-    width: 70%;
-}
-
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 20%;
-    padding-left: $xs2;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
-    width: 80%;
-    padding: $xs2;
-}
-
-.fakeimg1 {
-    background-color: transparent;
-    width: 80%;
-    padding: $xs2;
-    text-align: center;
-}
-
-.fakeimg1 img {
-    height: $md3;
-
-}
-
 /* card effect for articles */
 .card {
     background-color: $color5;
@@ -672,31 +661,11 @@ input {
     margin-top: $xs2;
 }
 
-.card h2 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-
-    .leftcolumn,
-    .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
-}
 
 /* -------------ABOUT ME------------- */
 
 .about-section {
+    margin: 0 auto;
     border: 1px solid $color6;
     display: flex;
     justify-content: center;
@@ -707,6 +676,16 @@ input {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 99%;
+
+    h3 {
+        font-size: 2em;
+    }
+    p{
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
 
 #hero .profile-img {
@@ -719,6 +698,7 @@ input {
 }
 
 .results {
+    padding-top: $xs2;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
@@ -726,17 +706,12 @@ input {
 }
 
 .section-inner {
+    padding-top: $xs2;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-}
-
-.about-contact a {
-    margin: $xs4;
-    text-decoration: none;
-    color: #212A3E;
 }
 
 .section-inner2 {
@@ -754,28 +729,24 @@ input {
     font-size: $xs2;
 }
 
+.about-contact a {
+    margin: $xs4;
+    text-decoration: none;
+    color: #212A3E;
+}
+
 .about-contact a:hover {
     font-weight: bold;
 }
 
 #hero {
-
     background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
 }
-
-#about {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
-
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
-}
-
-#about {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
-}
-
-
 
 /* -------------GALLERY------------- */
+#gallery {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('../Media/contactH.webp');
+}
 
 .galeria {
     width: 100%;
@@ -785,6 +756,10 @@ input {
     grid-template-rows: repeat(4, $lg1);
     padding: $xs2;
     grid-gap: 15px;
+}
+
+.carousel-control-prev-icon .active {
+    color: #347f38;
 }
 
 .item {
@@ -909,6 +884,7 @@ input {
         background-size: contain;
     }
 }
+
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     .galeria {
@@ -916,6 +892,7 @@ input {
         grid-template-rows: repeat(6, $lg1);
     }
 }
+
 /* Media Query for Tablets Ipads portrait mode */
 @media only screen and (min-width:768px) and (max-width:1024px) {
     .galeria {
@@ -1064,6 +1041,7 @@ input {
     width: $xs4;
     border-radius: $xs2;
     background-color: #495464;
+    opacity: 0.8;
     color: $color5;
     position: fixed;
     right: $xs4;

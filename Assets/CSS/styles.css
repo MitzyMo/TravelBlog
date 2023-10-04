@@ -8,7 +8,6 @@
   box-sizing: border-box;
   /*Respetar los padding adicionales*/
   font-family: "museo-slab", "sans";
-  font-weight: lighter;
 }
 
 /* ------------Smooth Scrolling------------- */
@@ -38,12 +37,16 @@ h3 {
   font-size: 23px;
 }
 
+p {
+  font-size: 20px;
+}
+
 a {
   font-weight: lighter;
   text-decoration: none;
   animation: 1.5s ease 0s infinite pulse;
   cursor: pointer;
-  color: rgb(33, 53, 85);
+  color: rgb(79, 112, 156);
 }
 
 .body {
@@ -73,7 +76,7 @@ a {
 }
 
 .section-padding {
-  padding: 80px 0px;
+  padding: 50px 0px;
 }
 
 .section-content {
@@ -137,12 +140,12 @@ a {
 .navbar .nav-item a {
   color: black;
   text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
+  font-weight: lighter;
+  font-size: 16px;
 }
 
 .navbar .nav-item a:hover {
-  color: rgb(73, 84, 100);
+  color: white;
 }
 
 .navbar .nav-link {
@@ -171,7 +174,7 @@ a {
 /*---- Banner Start ----*/
 .banner {
   background: rgb(187, 191, 202);
-  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+  background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
   padding: 100px 0px;
   position: relative;
 }
@@ -185,6 +188,7 @@ a {
   margin: 50px 0px 0px;
   margin: 40px 0px;
   margin: 25px 0px;
+  color: white;
 }
 .banner .banner-content a {
   font-size: 20px;
@@ -197,16 +201,21 @@ a {
   border-radius: 20px;
 }
 
-.svg-wave {
+.svg-wave .svg-hero {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 
 /*---- Banner End ----*/
+#about {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
+}
+
 /*---- Travel Tips Background End----*/
 .video-overlay {
-  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+  background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
 }
 
 /*---- Travel Tips Background End ----*/
@@ -247,9 +256,6 @@ a {
     font-size: 12px;
   }
 }
-/*------ Media Query End -------*/
-/* ------------ Index End ------------- */
-/* ------------ Personalized Sections ------------- */
 /* ------------ ABOUT ME SECTION 1 CSS LEFT REUSE FORM PAGES------------- */
 .about-section1 {
   display: flex;
@@ -263,18 +269,21 @@ a {
   background-attachment: fixed;
   color: black;
 }
-.about-section1 .about-content img, .about-section1 h1, .about-section1 h2, .about-section1 p {
+.about-section1 .about-contact p {
+  width: 80%;
+}
+.about-section1 .about-content img,
+.about-section1 h1,
+.about-section1 h2,
+.about-section1 p {
   padding-bottom: 10px;
 }
 .about-section1 .about-content h1 {
-  color: rgb(33, 53, 85);
+  color: rgb(79, 112, 156);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 2px;
   text-decoration-color: rgb(205, 159, 250);
-}
-.about-section1 .about-section h3 {
-  font-size: 2em;
 }
 .about-section1 .about-content h2 a {
   text-shadow: 2px 2px rgba(79, 112, 156, 0.7);
@@ -354,7 +363,7 @@ a {
 
 /* Media Query for Mobile Devices */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 360px) and (max-width: 773px) {
+@media (min-width: 280px) and (max-width: 773px) {
   #sec2-travel-vid-tip3 {
     visibility: hidden;
   }
@@ -425,40 +434,33 @@ a {
   }
 }
 /* ------------ CONTACT ME SECTION 4 CSS FOR INDEX REUSED FROM THE PAGES CSS------------- */
+/* ------------ Index End ------------- */
 /* ------------ PAGES CSS ------------- */
 /* -------------CONTACT ME REUSE FOR INDEX VIEW------------- */
 /*Body*/
 .contact {
   background: rgb(187, 191, 202);
-  background: linear-gradient(to left, rgb(33, 53, 85) 35%, rgb(79, 112, 156) 46%);
+  background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
   padding: 100px 0px;
   position: relative;
 }
-
-.contact-item {
-  margin: 23px 0px;
+.contact p {
+  color: white;
 }
-
-.contact-item i {
+.contact .contact-item {
+  margin: 23px 0px;
+  font-size: 16px;
+}
+.contact .contact-item i {
   font-size: 20px;
 }
-
-.contact-item p {
+.contact .contact-item p {
   line-height: 20px;
   margin: 0;
 }
 
-.contactB {
-  background-image: url(../Media/fade.webp);
-  background-size: cover;
-}
-
 #contact_form {
   margin-bottom: 20px;
-}
-
-.contact-item {
-  font-size: 12px;
 }
 
 #contact_form .form-input {
@@ -545,39 +547,6 @@ input {
 /*------ Animation start------*/
 /*------ Animation End------*/
 /* -------------TRAVEL BLOG------------- */
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  margin-left: 40px;
-  float: left;
-  width: 70%;
-}
-
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 20%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 80%;
-  padding: 20px;
-}
-
-.fakeimg1 {
-  background-color: transparent;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-
-.fakeimg1 img {
-  height: 100px;
-}
-
 /* card effect for articles */
 .card {
   background-color: white;
@@ -585,28 +554,9 @@ input {
   margin-top: 20px;
 }
 
-.card h2 a {
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn,
-  .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
 /* -------------ABOUT ME------------- */
 .about-section {
+  margin: 0 auto;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -617,6 +567,14 @@ input {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 99%;
+}
+.about-section h3 {
+  font-size: 2em;
+}
+.about-section p {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #hero .profile-img {
@@ -629,6 +587,7 @@ input {
 }
 
 .results {
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -636,17 +595,12 @@ input {
 }
 
 .section-inner {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-}
-
-.about-contact a {
-  margin: 40px;
-  text-decoration: none;
-  color: #212A3E;
 }
 
 .section-inner2 {
@@ -664,6 +618,12 @@ input {
   font-size: 20px;
 }
 
+.about-contact a {
+  margin: 40px;
+  text-decoration: none;
+  color: #212A3E;
+}
+
 .about-contact a:hover {
   font-weight: bold;
 }
@@ -672,16 +632,11 @@ input {
   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
 }
 
-#about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
-}
-
-#about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
-}
-
 /* -------------GALLERY------------- */
+#gallery {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url("../Media/contactH.webp");
+}
+
 .galeria {
   width: 100%;
   background-color: rgb(255, 255, 255);
@@ -690,6 +645,10 @@ input {
   grid-template-rows: repeat(4, 200px);
   padding: 20px;
   grid-gap: 15px;
+}
+
+.carousel-control-prev-icon .active {
+  color: #347f38;
 }
 
 .item {
@@ -930,6 +889,7 @@ input {
   width: 40px;
   border-radius: 20px;
   background-color: #495464;
+  opacity: 0.8;
   color: white;
   position: fixed;
   right: 40px;
