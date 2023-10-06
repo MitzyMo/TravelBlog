@@ -173,7 +173,7 @@ a {
 .banner {
   background: rgb(187, 191, 202);
   background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
-  padding: 200px 0px;
+  padding: 150px 0px;
   position: relative;
 }
 .banner .banner-content .banner-title {
