@@ -44,9 +44,7 @@ p {
 a {
   font-weight: lighter;
   text-decoration: none;
-  animation: 1.5s ease 0s infinite pulse;
   cursor: pointer;
-  color: rgb(79, 112, 156);
 }
 
 .body {
@@ -128,7 +126,7 @@ a {
   padding-right: 0;
   min-height: 50px;
   line-height: 50px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.9);
   z-index: 1030;
 }
 
@@ -175,7 +173,7 @@ a {
 .banner {
   background: rgb(187, 191, 202);
   background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
-  padding: 100px 0px;
+  padding: 200px 0px;
   position: relative;
 }
 .banner .banner-content .banner-title {
@@ -194,6 +192,11 @@ a {
   font-size: 20px;
   color: white;
   text-shadow: 2px 2px black;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+.banner .banner-content a:hover {
+  color: white;
 }
 
 .banner-img {
@@ -234,7 +237,7 @@ a {
 @media all and (max-width: 992px) {
   .navbar .navbar-collapse {
     overflow: auto;
-    background: rgba(187, 191, 202, 0.7);
+    background: rgba(187, 191, 202, 0.9);
     color: white !important;
     text-align: center;
     padding: 10px 0;
@@ -279,22 +282,22 @@ a {
   padding-bottom: 10px;
 }
 .about-section1 .about-content h1 {
-  color: rgb(79, 112, 156);
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 2px;
-  text-decoration-color: rgb(205, 159, 250);
+  color: black;
 }
-.about-section1 .about-content h2 a {
+.about-section1 .about-content a {
   text-shadow: 2px 2px rgba(79, 112, 156, 0.7);
   transition: all 0.33s ease-out;
 }
-.about-section1 .about-content h2 a:hover {
+.about-section1 .about-content a:hover {
   transform: scale(1.1);
 }
 .about-section1 .about-text {
   width: 80%;
   margin: 0 auto;
+  transition: all 0.33s ease-out;
+}
+.about-section1 .about-text:hover {
+  transform: scale(1.1);
 }
 
 /* Media Query for Mobile Devices */
@@ -394,9 +397,6 @@ a {
     height: 665px;
   }
 }
-/* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for Laptops and Desktops */
-/* Media Query for Large screens */
 /* ------------ GALLERY SECTION 3------------- */
 /* ----- BS Carrousel Media Queries ----- */
 .d-flex {
@@ -404,7 +404,7 @@ a {
 }
 
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 348px) and (max-width: 480px) {
   .d-flex {
     height: 12rem;
   }
@@ -434,6 +434,10 @@ a {
   }
 }
 /* ------------ CONTACT ME SECTION 4 CSS FOR INDEX REUSED FROM THE PAGES CSS------------- */
+.contact a {
+  color: white;
+}
+
 /* ------------ Index End ------------- */
 /* ------------ PAGES CSS ------------- */
 /* -------------CONTACT ME REUSE FOR INDEX VIEW------------- */
@@ -443,6 +447,9 @@ a {
   background: linear-gradient(to left, rgb(79, 112, 156) 35%, rgb(33, 53, 85) 46%);
   padding: 100px 0px;
   position: relative;
+}
+.contact h2 {
+  color: white;
 }
 .contact p {
   color: white;
@@ -880,9 +887,6 @@ input {
     grid-row: 24/44;
   }
 }
-/* ------------To be Set Up Later On If Needed------------- */
-/* Media Query for Laptops and Desktops */
-/* Media Query for Large screens */
 /* ------------ BACKUP BUTTON ------------*/
 .up {
   height: 40px;
