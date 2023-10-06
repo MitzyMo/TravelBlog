@@ -85,6 +85,12 @@ a {
   width: 69%;
   margin: 0 auto;
 }
+.sectioner-header a {
+  color: rgb(33, 53, 85);
+}
+.sectioner-header a:hover {
+  color: rgb(79, 112, 156);
+}
 
 .sectioner-header p {
   font-size: 17px;
@@ -143,7 +149,7 @@ a {
 }
 
 .navbar .nav-item a:hover {
-  color: white;
+  color: rgb(122, 96, 255);
 }
 
 .navbar .nav-link {
@@ -196,7 +202,7 @@ a {
   transition-delay: 2s;
 }
 .banner .banner-content a:hover {
-  color: white;
+  color: rgb(79, 112, 156);
 }
 
 .banner-img {
@@ -234,7 +240,7 @@ a {
   }
 }
 /*------ Media Query Start -------*/
-@media all and (max-width: 992px) {
+@media all and (max-width: 1050px) {
   .navbar .navbar-collapse {
     overflow: auto;
     background: rgba(187, 191, 202, 0.9);
@@ -290,6 +296,7 @@ a {
 }
 .about-section1 .about-content a:hover {
   transform: scale(1.1);
+  color: black;
 }
 .about-section1 .about-text {
   width: 80%;
@@ -310,6 +317,10 @@ a {
   }
 }
 /* ------------ TRAVEL TIPS SECTION 2------------- */
+#travel a {
+  color: white;
+}
+
 #sec2-travel-vid-tip1 {
   height: 400px;
   grid-area: vid1;
@@ -628,11 +639,11 @@ input {
 .about-contact a {
   margin: 40px;
   text-decoration: none;
-  color: #212A3E;
+  color: rgb(33, 53, 85);
 }
 
 .about-contact a:hover {
-  font-weight: bold;
+  color: rgb(79, 112, 156);
 }
 
 #hero {

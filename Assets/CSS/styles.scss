@@ -117,6 +117,12 @@ a {
 .sectioner-header {
     width: 69%;
     margin: 0 auto;
+    a{
+        color: $color2;
+    }
+    a:hover{
+        color: $color1;
+    }
 }
 
 .sectioner-header p {
@@ -177,7 +183,7 @@ a {
 }
 
 .navbar .nav-item a:hover {
-    color: $color5;
+    color: $color8;
 }
 
 .navbar .nav-link {
@@ -233,7 +239,7 @@ a {
             transition-delay: 2s;
         }
         a:hover{
-            color: $color5;
+            color: $color1;
         }
     }
 }
@@ -264,6 +270,7 @@ a {
     background: linear-gradient(to left, $color1 35%, $color2 46%);
 }
 
+
 /*---- Travel Tips Background End ----*/
 
 /* Media Query for Mobile Devices */
@@ -280,7 +287,7 @@ a {
 }
 
 /*------ Media Query Start -------*/
-@media all and (max-width:992px) {
+@media all and (max-width:1050px) {
     .navbar .navbar-collapse {
         overflow: auto;
         background: $color4s;
@@ -346,6 +353,7 @@ a {
 
     .about-content a:hover {
         transform: scale(1.1);
+        color: $color6;
     }
 
     .about-text {
@@ -371,6 +379,10 @@ a {
 }
 
 /* ------------ TRAVEL TIPS SECTION 2------------- */
+
+#travel a{
+    color: $color5;
+}
 
 #sec2-travel-vid-tip1 {
     height: 400px;
@@ -736,11 +748,11 @@ input {
 .about-contact a {
     margin: $xs4;
     text-decoration: none;
-    color: #212A3E;
+    color: $color2;
 }
 
 .about-contact a:hover {
-    font-weight: bold;
+    color: $color1;
 }
 
 #hero {
