@@ -187,7 +187,6 @@ a {
 }
 
 .navbar .nav-link {
-    position: relative;
     padding: 0;
 }
 
@@ -274,7 +273,7 @@ a {
 /*---- Travel Tips Background End ----*/
 
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
+@media all and (max-width: 480px) {
     .banner-content {
         padding-right: 0px;
         padding-bottom: $xs2;
@@ -368,7 +367,7 @@ a {
 }
 
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
+@media all and (max-width: 480px) {
     .about-section1--img {
         width: 340px;
     }
@@ -445,15 +444,25 @@ a {
 
 /* Media Query for Mobile Devices */
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 280px) and (max-width: 773px) {
+@media all and (max-width: 773px) {
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
-
     #sec2-travel-vid-tip2 {
         visibility: hidden;
     }
-
+    #sec2-travel-text-tip3{
+        visibility: hidden;
+    }
+    #sec2-travel-text-tip2{
+        visibility: hidden;
+    }
+    #sec2-travel-title-tip3{
+        visibility: hidden;
+    }
+    #sec2-travel-title-tip2{
+        visibility: hidden;
+    
     .sec2-travel-video {
         display: grid;
         margin: 0 auto;
@@ -467,13 +476,18 @@ a {
 
     }
 }
-
+}
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 774px) and (max-width: 938px) {
     #sec2-travel-vid-tip3 {
         visibility: hidden;
     }
-
+    #sec2-travel-title-tip3{
+        visibility: hidden;
+    }
+    #sec2-travel-text-tip3{
+        visibility: hidden;
+    }
     .sec2-travel-video {
         width: 100vh;
         display: grid;
@@ -498,7 +512,7 @@ a {
 }
 
 /* Media Query for Mobile Devices */
-@media (min-width: 348px) and (max-width: 480px) {
+@media all and (max-width: 480px) {
     .d-flex {
         height: 12rem;
     }
@@ -876,7 +890,7 @@ input {
 /* inician las media queries */
 
 /* Media Query for Mobile Devices */
-@media (min-width: 360px) and (max-width: 480px) {
+@media all and (max-width: 480px) {
     .galeria {
         /* grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, $lg1); */
