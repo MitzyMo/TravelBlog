@@ -430,7 +430,7 @@ a {
     margin: 0 auto;
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
-    grid-template-areas: "vid1 vid2" "title1 title2" "text1 text2" "vide3 ." "title3 ." "text3 .";
+    grid-template-areas: "vid1 vid2" "title1 title2" "text1 text2";
     height: 655px;
   }
 }
@@ -650,7 +650,7 @@ input {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .section-inner2 {
