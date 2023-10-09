@@ -89,52 +89,167 @@
     </header>
 
     <main class="body">
-      <div class="row">
-        <div class="leftcolumn">
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <div class="fakeimg" style="height: 200px"></div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
+      <!-- Page content-->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+              <!-- Post header-->
+              <header class="mb-4">
+                <!-- Post title-->
+                <h1 class="fw-bolder mb-1">
+                  Valuable Advice for Solo Travelers!
+                </h1>
+                <!-- Post meta content-->
+                <div class="text-muted fst-italic mb-2">
+                  Posted on October 1, 2023 by Mo the Traveler
+                </div>
+                <!-- Post categories-->
+                <a
+                  class="badge bg-secondary text-decoration-none link-light"
+                  href="#!"
+                  >Prague</a
+                >
+                <a
+                  class="badge bg-secondary text-decoration-none link-light"
+                  href="#!"
+                  >Music</a
+                >
+              </header>
+              <!-- Preview image figure-->
+              <figure class="mb-4">
+                <img
+                  class="img-fluid rounded"
+                  src="../Assets/Media/pexels-julius-silver-753337.webp"
+                  alt="Prague"
+                />
+              </figure>
+              <!-- Post content-->
+              <section class="mb-5">
+                <h2 class="fw-bolder mb-4 mt-5">
+                  The best day trips from Prague
+                </h2>
+                <p class="fs-5 mb-4">
+                  Czechia's capital city is a fantastic sprawl of Gothic,
+                  Renaissance and baroque buildings that line both banks of the
+                  Vltava River. Millions come here every year to soak in the
+                  atmosphere and architectural splendor, but with so many people
+                  crowding the streets, the flavor of the country itself can get
+                  lost.
+                </p>
+                <p class="fs-5 mb-4">
+                  The surrounding countryside holds some of Czechia's most
+                  important sights, from a church made of human bones to the
+                  castle that once enshrined the Bohemian crown jewels. More
+                  importantly, leaving the Prague tourist bubble even for a day
+                  allows you to learn more about Czechs, their culture and
+                  history. These are the best excursions from Prague within a
+                  90-minute radius of the city limits.
+                </p>
+                <p class="fs-5 mb-4">
+                  Still, it's useful to have a few money-saving tips to hand if
+                  you want to stick to a budget. Here are some ways to cut your
+                  costs when visiting Prague.
+                </p>
+                <h2 class="fw-bolder mb-5 mt-5">Highlights of Prague</h2>
+                <img
+                class="img-fluid rounded pb-4 mx-auto d-block"
+                src="../Assets/Media/pexels-jeffrey-czum-2346216.webp"
+                alt="Prague"/>
+                <p class="fs-5 mb-4">
+                  The city center is compact and the finest areas are mostly
+                  pedestrianized, so Prague is best explored on foot; from
+                  Wenceslas Square on one side of the city to Prague Castle on
+                  the other is just a 30-minute stroll (walking via the Old
+                  Town, across the river and through the Lesser Town).
+                </p>
+                <p class="fs-5 mb-4">
+                  The first thing to do in Prague, therefore, is simply to
+                  wander through the streets and magnificent squares, to revel
+                  in the atmosphere, and to admire the stunning architecture all
+                  around.
+                </p>
+              </section>
+            </article>
+            <!-- Comments section-->
+            <section class="mb-4">
+              <div class="card mb-4">
+                <div class="card-header">Comments</div>
+                <div class="flex-shrink-0 pt-4 pb-2">
+                  <img
+                    class="rounded-circle"
+                    src="../Assets/Media/user.png"
+                    alt="Commenter"
+                  />
+                </div>
+                <div class="fw-bold">Commenter Name</div>
+                <div class="card-body">
+                  Wow, this blog is a treasure trove of wanderlust-inspiring
+                  stories and practical travel tips! I'm ready to pack my bags
+                  and explore the world after reading just a few posts. Keep the
+                  adventures coming! ✈️🌍 #TravelDreams
+                </div>
+              </div>
+            </section>
           </div>
-          <div class="card">
-            <h2>TITLE HEADING</h2>
-            <h5>Title description, Sep 2, 2017</h5>
-            <div class="fakeimg" style="height: 200px"></div>
-            <p>Some text..</p>
-            <p>
-              Sunt in culpa qui officia deserunt mollit anim id est laborum
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-              nostrud exercitation ullamco.
-            </p>
-          </div>
-        </div>
-        <div class="rightcolumn">
-          <div class="card">
-            <h2><a href="./About.html">About Me</a></h2>
-            <div class="fakeimg1" style="height: 100px"></div>
-            <p>
-              Some text about me in culpa qui officia deserunt mollit anim..
-            </p>
-          </div>
-          <div class="card">
-            <h3>Popular Post</h3>
-            <div class="fakeimg">Image</div>
-            <br />
-            <div class="fakeimg">Image</div>
-            <br />
-            <div class="fakeimg">Image</div>
-          </div>
-          <div class="card">
-            <h3>Follow Me</h3>
-            <p>Some text..</p>
+          <!-- Side widgets-->
+          <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4">
+              <div class="card-header">Search</div>
+              <div class="card-body">
+                <div class="input-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Enter search term..."
+                    aria-label="Enter search term..."
+                    aria-describedby="button-search"
+                  />
+                  <button
+                    class="btn btn-primary mb-3"
+                    id="button-search"
+                    type="button"
+                  >
+                    Go!
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Categories widget-->
+            <div class="card mb-4">
+              <div class="card-header">Categories</div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#!" style="pointer-events: none">Europe</a></li>
+                      <li><a href="#!" style="pointer-events: none">Africa</a></li>
+                      <li><a href="#!" style="pointer-events: none">America</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6">
+                    <ul class="list-unstyled mb-0">
+                      <li><a href="#!" style="pointer-events: none">Traval</a></li>
+                      <li><a href="#!" style="pointer-events: none">Food</a></li>
+                      <li><a href="#!" style="pointer-events: none">Work</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+              <div class="card-header">Daily Photo</div>
+              <div class="card-body">
+                <img
+                  class="img-fluid rounded mx-auto d-block"
+                  src="../Assets/Media/pexels-son-tung-tran-6478474.webp"
+                  alt="Prague boat"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
