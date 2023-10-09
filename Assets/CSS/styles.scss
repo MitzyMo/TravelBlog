@@ -10,7 +10,7 @@ $color1: rgb(79, 112, 156, 1);
 $color2: rgb(33, 53, 85, 1);
 $color3: rgb(205, 159, 250);
 $color4: rgb(187, 191, 202);
-$color4s: rgb(187, 191, 202, 0.9);
+$color4s: rgb(187, 191, 202, 0.98);
 $color5: white;
 $color5s: rgb(255, 255, 255,0.9);
 $color6: black;
@@ -478,7 +478,7 @@ a {
             "vid1"
             "title1"
             "text1";
-        height: 665px;
+        height: 655px;
     }
 }
 /* Media Query for Tablets Ipads portrait mode */
@@ -508,7 +508,7 @@ a {
             "vide3 ."
             "title3 ."
             "text3 .";
-        height: 665px;
+        height: 655px;
 
     }
 }
@@ -524,14 +524,20 @@ a {
 /* Media Query for Mobile Devices */
 @media all and (max-width: 480px) {
     .d-flex {
-        height: 12rem;
+        height: 20rem;
+        .carousel-img{
+            width: 95%;
+        }
     }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     .d-flex {
-        height: 22rem;
+        height: 23rem;
+        .carousel-img{
+            width: 95%;
+        }
     }
 }
 

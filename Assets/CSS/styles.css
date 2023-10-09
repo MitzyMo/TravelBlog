@@ -242,7 +242,7 @@ a {
 @media all and (max-width: 1050px) {
   .navbar .navbar-collapse {
     overflow: auto;
-    background: rgba(187, 191, 202, 0.9);
+    background: rgba(187, 191, 202, 0.98);
     color: white !important;
     text-align: center;
     padding: 10px 0;
@@ -407,7 +407,7 @@ a {
     grid-gap: 10px;
     grid-template-columns: 100%;
     grid-template-areas: "vid1" "title1" "text1";
-    height: 665px;
+    height: 655px;
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
@@ -431,7 +431,7 @@ a {
     grid-gap: 10px;
     grid-template-columns: 50% 50%;
     grid-template-areas: "vid1 vid2" "title1 title2" "text1 text2" "vide3 ." "title3 ." "text3 .";
-    height: 665px;
+    height: 655px;
   }
 }
 /* ------------ GALLERY SECTION 3------------- */
@@ -443,13 +443,19 @@ a {
 /* Media Query for Mobile Devices */
 @media all and (max-width: 480px) {
   .d-flex {
-    height: 12rem;
+    height: 20rem;
+  }
+  .d-flex .carousel-img {
+    width: 95%;
   }
 }
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
   .d-flex {
-    height: 22rem;
+    height: 23rem;
+  }
+  .d-flex .carousel-img {
+    width: 95%;
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
