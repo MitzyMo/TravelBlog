@@ -462,19 +462,24 @@ a {
     }
     #sec2-travel-title-tip2{
         visibility: hidden;
-    
-    .sec2-travel-video {
-        display: grid;
-        margin: 0 auto;
-        grid-gap: $xs1;
-        grid-template-columns: 100%;
-        grid-template-areas:
-            "vid1"
-            "title1"
-            "text1";
-        height: 665px;
-
     }
+
+.sec2-travel-video {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: $xs1;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "vid1"
+        "title1"
+        "text1"
+        "vid2"
+        "title2"
+        "text2"
+        "vid3"
+        "title3"
+        "text3";
+    height: 665px;
 }
 }
 /* Media Query for Tablets Ipads portrait mode */
@@ -497,7 +502,10 @@ a {
         grid-template-areas:
             "vid1 vid2"
             "title1 title2"
-            "text1 text2";
+            "text1 text2"
+            "vide3 ."
+            "title3 ."
+            "text3 .";
         height: 665px;
 
     }
