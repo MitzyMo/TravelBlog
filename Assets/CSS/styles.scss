@@ -10,7 +10,7 @@ $color1: rgb(79, 112, 156, 1);
 $color2: rgb(33, 53, 85, 1);
 $color3: rgb(205, 159, 250);
 $color4: rgb(187, 191, 202);
-$color4s: rgb(187, 191, 202, 0.9);
+$color4s: rgb(187, 191, 202, 0.98);
 $color5: white;
 $color5s: rgb(255, 255, 255,0.9);
 $color6: black;
@@ -369,11 +369,11 @@ a {
 /* Media Query for Mobile Devices */
 @media all and (max-width: 480px) {
     .about-section1--img {
-        width: 340px;
+        width: 319px;
     }
 
     .about-text {
-        width: 340px;
+        width: 319px;
     }
 }
 
@@ -445,53 +445,55 @@ a {
 /* Media Query for Mobile Devices */
 /* Media Query for low resolution  Tablets, Ipads */
 @media all and (max-width: 773px) {
-    #sec2-travel-vid-tip3 {
-        visibility: hidden;
-    }
-    #sec2-travel-vid-tip2 {
-        visibility: hidden;
-    }
-    #sec2-travel-text-tip3{
-        visibility: hidden;
-    }
-    #sec2-travel-text-tip2{
-        visibility: hidden;
-    }
-    #sec2-travel-title-tip3{
-        visibility: hidden;
+    #sec2-travel-vid-tip2{
+        display: none;
+        pointer-events: none;
     }
     #sec2-travel-title-tip2{
-        visibility: hidden;
+        display: none;
+        pointer-events: none;
     }
-
-.sec2-travel-video {
-    display: grid;
-    margin: 0 auto;
-    grid-gap: $xs1;
-    grid-template-columns: 100%;
-    grid-template-areas:
-        "vid1"
-        "title1"
-        "text1"
-        "vid2"
-        "title2"
-        "text2"
-        "vid3"
-        "title3"
-        "text3";
-    height: 665px;
-}
+    #sec2-travel-text-tip2{
+        display: none;
+        pointer-events: none;
+    }
+    #sec2-travel-vid-tip3 {
+        display: none;
+        pointer-events: none;
+    }
+    #sec2-travel-title-tip3{
+        display: none;
+        pointer-events: none;
+    }
+    #sec2-travel-text-tip3{
+        display: none;
+        pointer-events: none;
+    }
+    .sec2-travel-video {
+        display: grid;
+        margin: 0 auto;
+        grid-gap: $xs1;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "vid1"
+            "title1"
+            "text1";
+        height: 655px;
+    }
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 774px) and (max-width: 938px) {
     #sec2-travel-vid-tip3 {
-        visibility: hidden;
+        display: none;
+        pointer-events: none;
     }
     #sec2-travel-title-tip3{
-        visibility: hidden;
+        display: none;
+        pointer-events: none;
     }
     #sec2-travel-text-tip3{
-        visibility: hidden;
+        display: none;
+        pointer-events: none;
     }
     .sec2-travel-video {
         width: 100vh;
@@ -506,7 +508,7 @@ a {
             "vide3 ."
             "title3 ."
             "text3 .";
-        height: 665px;
+        height: 655px;
 
     }
 }
@@ -522,14 +524,20 @@ a {
 /* Media Query for Mobile Devices */
 @media all and (max-width: 480px) {
     .d-flex {
-        height: 12rem;
+        height: 20rem;
+        .carousel-img{
+            width: 95%;
+        }
     }
 }
 
 /* Media Query for low resolution  Tablets, Ipads */
 @media (min-width: 481px) and (max-width: 767px) {
     .d-flex {
-        height: 22rem;
+        height: 23rem;
+        .carousel-img{
+            width: 95%;
+        }
     }
 }
 
