@@ -309,10 +309,10 @@ a {
 /* Media Query for Mobile Devices */
 @media all and (max-width: 480px) {
   .about-section1--img {
-    width: 340px;
+    width: 319px;
   }
   .about-text {
-    width: 340px;
+    width: 319px;
   }
 }
 /* ------------ TRAVEL TIPS SECTION 2------------- */
@@ -377,43 +377,52 @@ a {
 /* Media Query for Mobile Devices */
 /* Media Query for low resolution  Tablets, Ipads */
 @media all and (max-width: 773px) {
-  #sec2-travel-vid-tip3 {
-    visibility: hidden;
-  }
   #sec2-travel-vid-tip2 {
-    visibility: hidden;
-  }
-  #sec2-travel-text-tip3 {
-    visibility: hidden;
-  }
-  #sec2-travel-text-tip2 {
-    visibility: hidden;
-  }
-  #sec2-travel-title-tip3 {
-    visibility: hidden;
+    display: none;
+    pointer-events: none;
   }
   #sec2-travel-title-tip2 {
-    visibility: hidden;
+    display: none;
+    pointer-events: none;
+  }
+  #sec2-travel-text-tip2 {
+    display: none;
+    pointer-events: none;
+  }
+  #sec2-travel-vid-tip3 {
+    display: none;
+    pointer-events: none;
+  }
+  #sec2-travel-title-tip3 {
+    display: none;
+    pointer-events: none;
+  }
+  #sec2-travel-text-tip3 {
+    display: none;
+    pointer-events: none;
   }
   .sec2-travel-video {
     display: grid;
     margin: 0 auto;
     grid-gap: 10px;
     grid-template-columns: 100%;
-    grid-template-areas: "vid1" "title1" "text1" "vid2" "title2" "text2" "vid3" "title3" "text3";
+    grid-template-areas: "vid1" "title1" "text1";
     height: 665px;
   }
 }
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 774px) and (max-width: 938px) {
   #sec2-travel-vid-tip3 {
-    visibility: hidden;
+    display: none;
+    pointer-events: none;
   }
   #sec2-travel-title-tip3 {
-    visibility: hidden;
+    display: none;
+    pointer-events: none;
   }
   #sec2-travel-text-tip3 {
-    visibility: hidden;
+    display: none;
+    pointer-events: none;
   }
   .sec2-travel-video {
     width: 100vh;
